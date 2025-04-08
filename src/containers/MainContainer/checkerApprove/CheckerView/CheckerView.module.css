@@ -1,0 +1,475 @@
+/* .cardsmainpage {
+    
+    margin: 1rem;
+} */
+
+.cardsheader {
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0px;
+    /* 0% */
+    margin-bottom: 20px;
+}
+
+.grid1container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    background: #183883;
+    padding: 10px 20px;
+    gap: 70px;
+
+}
+
+.grid1mainlogo {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid1number {
+    margin-top: 20px;
+    margin-bottom: -15px;
+}
+
+
+.grid1name {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.grid1number {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.grid1lowerinfo {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 100px;
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.grid2container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    border: 1px solid #EEE;
+    background: #FFF6E7;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    padding: 50px 40px;
+    gap: 30px;
+
+}
+
+
+
+.mainupperboxes {
+    display: flex;
+    gap: 50px;
+}
+
+.mainupperbox1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1text {
+    text-align: center;
+}
+
+.grid2name {
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.grid1switch {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.grid3container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    padding: 40px 20px 60px;
+    gap: 20px;
+    border-radius: 24px;
+    border: 1px solid #C2C2C2;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+}
+
+.gridtitlemain {
+    color: var(--text-primary, rgba(0, 0, 0, 0.87));
+    ;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 0px; */
+    /* 0% */
+
+    /* margin: 30px 0px 20px 0px; */
+    /* padding: 10px 0px 10px 15px; */
+}
+
+.gridtitle {
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0px;
+    /* 0% */
+
+    margin: 30px 0px 20px 0px;
+    padding: 10px 0px 10px 15px;
+}
+
+
+.tableMainBox {
+    border-radius: 8px !important;
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+    margin-bottom: 35px;
+}
+
+
+.AccountStatementComponent {
+    border-radius: 8px !important;
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+    margin: .8rem;
+}
+
+/* .accountstatement {
+    border-radius: 8px !important;
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+    margin: .8rem 0;
+    padding: 20px;
+} */
+
+.paymentHeading {
+    color: var(--Primary-Color, #183883);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal
+}
+
+.cardsBox {
+    margin-top: 15px;
+    border-radius: 2.25rem;
+    background: #FFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    min-height: 87%;
+}
+
+.mainheading {
+    color: var(--Primary-Color, #183883);
+
+    /* H5 */
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+
+.mainheading1 {
+    color: var(--Primary-Color, #183883);
+
+    /* H5 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.mainupper {
+    margin-top: 15px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 16px 20px;
+}
+
+
+.mainupper1 {
+    margin: 15px 0px;
+    
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px 0px 5px 0px;
+}
+
+.cardsBox1 {
+    margin-top: 15px;
+    border-radius: 2.25rem;
+    background: #FFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    /* padding: 15px; */
+    min-height: 87%;
+}
+
+
+.paymentHeadingBox {
+    display: flex;
+    padding: 15px;
+    border-radius: 8px !important;
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+    margin-bottom: 20px;
+}
+
+.transactionHeadingBox {
+    display: flex;
+    padding: 15px;
+    border-radius: 8px !important;
+
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+    margin-bottom: 20px;
+}
+
+.transactionHeading {
+    background: var(--Grey-Shade, #ECECEC);
+}
+
+.paymentHeadingBoxText {
+    margin-top: 20px;
+}
+
+.paymentHeadingBoxUpperText {
+    color: var(--Text-Main-Color, #505050);
+    /* H6 */
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.paymentHeadingBoxLowerText {
+    color: var(--Text-Main-Color, #505050);
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* 
+.paymentTransactionBox {
+    border-radius: 0.9375rem 0.625rem var(--none, 0rem) var(--none, 0rem);
+    background: var(--Grey-Shade, #ECECEC);
+} */
+.transactionDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transactionBox {
+    padding: 20px;
+}
+
+.transactionInfo {
+    padding-top: 30px;
+}
+
+.uppertitle {
+    color: var(--Text-Main-Color, #505050);
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.changebuttons {
+    display: flex;
+    padding-left: 80px;
+    gap: 0px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1550px) {
+
+    .changebuttons {
+        display: flex;
+        padding-left: 0px;
+        gap: 10px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .cardsmainpage {
+        /* width: 84vw; */
+        margin: 0.2rem;
+    }
+
+    .cardsheader {
+        color: #183883;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 0px;
+        margin-bottom: 20px;
+    }
+
+    .mainupperboxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .grid1mainlogo {
+        /* width: 80px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .grid1container {
+        width: 82vw;
+        display: flex;
+        flex-direction: column;
+        border-radius: 24px;
+        background: #183883;
+        padding: 10px 20px;
+        gap: 60px;
+
+    }
+
+    .grid1lowerinfo {
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 50px;
+        color: #FFF;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .grid2container {
+        width: 82vw;
+        display: flex;
+        flex-direction: column;
+        border-radius: 24px;
+        border: 1px solid #EEE;
+        background: #FFF6E7;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+        padding: 30px 20px;
+
+    }
+
+
+    .mainupperboxes {
+        display: flex;
+
+        gap: 60px;
+    }
+
+    .tableMainBox {
+        width: 82vw;
+        border-radius: 8px !important;
+        background: #FFF !important;
+        box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+        margin-bottom: 20px;
+    }
+}
+
+
+.textApproval {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 22px 15px 17px;
+}
+
+.fundsText {
+    display: flex;
+    justify-content: space-between;
+    color: var(--Active-Link-Color, #0072DA);
+
+    /* Subtital 1 */
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* //Corporate Account */
+
+
+.fundsText {
+    gap: 8px;
+}
+
+
+.payment1mobileprepaidbutton {
+    /* margin-top: 4%; */
+    /* margin: 15px 0px 20px 15px !important; */
+    display: flex;
+
+
+}

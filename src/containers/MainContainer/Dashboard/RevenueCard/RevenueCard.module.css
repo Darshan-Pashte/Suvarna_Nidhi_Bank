@@ -1,0 +1,75 @@
+.card {
+  padding: 0vw 1vw;
+  background-color: #f5f5f5;
+  border-radius: 0.51vw;
+  box-shadow: 0px 0.67vw 1.67vw rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 0.51vw 0.51vw rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.21vw);
+}
+
+.heading {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1vw;
+  font-weight: 500;
+  color: #666;
+  margin-top: -1vw;
+}
+
+.revenue {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.amount {
+  font-size: 2.2vw;
+  font-weight: bold;
+  color: #ff4560;
+  margin-right: 1.25vw;
+}
+
+.red {
+  color: #ff4560 !important;
+}
+
+.blue {
+  color: #0077b6 !important;
+}
+
+.green {
+  color: #3c763d !important;
+}
+
+@media (max-width: 500px) {
+  .card {
+    margin: 2vw;
+    padding: 1vw 3vw;
+    border-radius: 2vw;
+  }
+
+  .heading {
+    font-size: 6vw;
+  }
+
+  .description {
+    font-size: 4vw;
+  }
+
+  .amount {
+    font-size: 10vw;
+    margin-right: 3vw;
+  }
+
+  .chart {
+    width: 100%;
+    max-width: 50vw;
+  }
+}

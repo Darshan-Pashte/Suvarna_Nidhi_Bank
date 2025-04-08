@@ -1,0 +1,47 @@
+.mainpagePayment{
+    /* width: 84vw; */
+    margin: 3rem;
+}
+
+.tableMainBox{
+    border-radius: 8px !important;
+background: #FFF !important;
+box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ;
+}
+
+/* Policies */
+
+.policiesheader{
+    margin-bottom: 20px;
+    color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.required{
+    color: #ED1C24;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.policiescheckbox > span{
+    cursor: pointer;
+    color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: underline;
+}

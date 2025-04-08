@@ -1,0 +1,47 @@
+body {
+  font-family: 'Montserrat' !important;
+  /* font-family: 'Poppins' !important; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+
+#root {
+  height: 100vh;
+}
+
+
+:root {
+
+  --font-size-small-label: 0.9rem;
+  --font-size-medium: 1rem;
+  --tab-heading-font-size: 0.8rem;
+  --font-size-large: 20px;
+  --font-size-button: 0.9rem;
+  --primary-color: #AD2120;
+  --button-color: #AD2120;
+  --button-hover-color: #EF5F5E;
+  --secondary-color: #F2F2F2;
+   --tertiary-color: #AD2120;
+  --common-heading-color: #FFF;
+  --dashboard-heading-color: #F2F2F2;
+  /* Main Table heading or main heading otp in the Page */
+  --main-heading-color: #0C0C0C;
+--backgroundcolor-pages: #EDEDED
+  /* Table Heaading Color */
+  --common-table-heading-color: #DAE2F6;
+
+  --common-login-background-color: #FFECEC;
+  --common-login-box-background-color: #FFFFFF;
+
+  /* Card background */
+  --common-card-background-color: linear-gradient(274deg, #AD2120 0.5%, #2E0101 104.74%);
+    /* Body Background Color */
+    --body-background-color: #FFFBF2;
+
+  /* --------------------------New Theme----------------------------------- */
+
+}

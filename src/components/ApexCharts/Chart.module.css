@@ -1,0 +1,21 @@
+/* .ChartContainer {
+  background-color: white;
+  border-radius: 0.78125vw;
+  width: 100%;
+  position: unset !important;
+  margin-top: 1vw;
+} */
+
+.Title {
+  font-size: 0.8333vw;
+  font-weight: bold;
+  color: #000000;
+  padding-left: 1.5vw;
+  padding-top: 0.61vw;
+}
+
+.Head {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw;
+}

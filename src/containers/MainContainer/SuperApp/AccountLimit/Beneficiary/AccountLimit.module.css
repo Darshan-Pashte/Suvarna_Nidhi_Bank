@@ -1,0 +1,431 @@
+.mainpagePayment{
+    /* width: 84vw; */
+    /* margin: 1rem; */
+}
+
+.Payment1MobilePrepaidMainPage{
+    /* margin: 1rem; */
+}
+
+.accountlimitimpxheading{
+    /* color: #183883; */
+    color: var( --main-heading-color);
+
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 10px;
+display: flex;
+justify-content: space-between;
+}
+
+.box1{
+    margin-top: 10px;
+}
+
+.impsmidcontainer{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ padding: 20px;
+ border-radius: 6px;
+background: #FFF;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.accountlimithead1{
+    color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+/* line-height: 0px; */
+}
+
+.accountlimithead2{
+    color: #000;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 10px;
+}
+
+
+.tableMainBox{
+    border-radius: 8px !important;
+background: #FFF !important;
+box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ;
+
+}
+.tableMainBoxInner{
+    border-radius: 8px !important;
+/* background: #FFF !important;
+box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ; */
+/* padding: 24px; */
+}
+
+
+.impsnote{
+    color: #323232;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/* Policies */
+
+.policiesheader{
+    margin-bottom: 20px;
+    color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.required{
+    color: #ED1C24;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.policiescheckbox > span{
+    cursor: pointer;
+    color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: underline;
+}
+
+
+/* IMPS */
+
+.mainpageImps{
+    margin: 1.4rem;
+}
+
+.accountlimtImpsupper{
+    margin: 4% 0 8% 0;
+}
+
+.accountlimitrightside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accountlimitaccinfo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.Impsuppertext{
+    color: #323232;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 30px;
+}
+.Impslowertext{
+    display: flex;
+    justify-content: space-between;
+    color: #323232;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+}
+
+.payment1mobileprepaidbutton{
+    display: flex;
+    gap: 20px;
+}
+
+
+/* IMPS Card */
+
+.beneficiarytitle{
+    color: #323232;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.beneficiarycard{
+    border-radius: 6px;
+background: #FFF;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+padding: 10px;
+cursor: pointer;    
+}
+
+.beneficiarycardtitle{
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+}
+
+/* Beneficiary */
+
+.uppercontainerheading{
+    margin-top: 40px;
+    /* color: #183883; */
+    color: var( --main-heading-color);
+
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+.uppercontainercontent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+
+.uppercontainerleftcontent{
+    width: 48%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+background: #FFF;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+margin: 20px 0;
+cursor: pointer;
+}
+
+
+.uppercontainerleftcontent:hover{
+    
+    background: var(--Card-Color, #F9F9F9);
+}
+
+.uppercontainerleftcontenttop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftcontenttopleft{
+    color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.uppercontainerrightcontent{
+    display: flex;
+    border-radius: 6px;
+background: #FFF;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.uppercontainerleftcontentmiddle{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+   justify-content: flex-start;
+   align-items: center;
+   margin-top: 20px;
+   
+}
+
+.uppercontainerleftcontentmiddlecontainer{
+    display: flex;
+   flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 100%; */
+  /* width: 40%; */
+    gap:5px;
+    
+}
+
+.middlecontainertitle{
+    color: #323232;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.middlecontainerinfo{
+    color: #707070;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.uppercontainerrightcontent{
+    width: 48%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+background: #FFF;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+margin: 20px 0;
+}
+
+.leftcontenttopright{
+    cursor: pointer;
+}
+
+
+.refreshIcon{
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    width: fit-content;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+
+.beneficiaryInternal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sbox{
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    height: fit-content;
+}
+.redrow{
+    /* background: rgb(83 177 233 / 93%); */
+    background: var(--primary-color);
+    margin: 0%;
+    border-radius: 8px 8px 0px 0px;
+    padding: 0.8rem; 
+    color: var();
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:8vh;
+}
+.SubHeading{
+    color: var(--color-N10, #ffffff);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.no-match {
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+  }
+  
+@media only screen and (max-width: 568px){
+    .no-match {
+        display: flex;
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+      }
+      .redrow{
+        /* background: rgb(83 177 233 / 93%); */
+        background: var(--primary-color);
+        margin: 0%;
+        border-radius: 0px 0px 0px 0px;
+        padding: 0.8rem; 
+        color: var();
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:8vh;
+    }
+    .SubHeading{
+        color: var(--color-N10, #ffffff);
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Poppins;
+        font-size: var(--tab-heading-font-size);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .sbox{
+        background-color: #fff;
+        border-radius: 0px 0px 8px 8px;
+        box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 8px;
+        height: fit-content;
+    }
+}
+

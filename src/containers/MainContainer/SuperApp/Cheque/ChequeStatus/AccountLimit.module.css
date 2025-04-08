@@ -1,0 +1,439 @@
+.mainpagePayment {
+    /* width: 84vw; */
+    margin: 1rem;
+}
+
+.Payment1MobilePrepaidMainPage {
+    /* margin: 1rem; */
+}
+
+.accountlimitimpxheading {
+    /* color: #183883; */
+    color: var( --main-heading-color);
+
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* margin-bottom: 10px; */
+    display: flex;
+    justify-content: space-between;
+}
+.frowtextaff{
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+.frowdataaff{
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+.impsmidcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.accountlimithead1 {
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 0px; */
+}
+
+.accountlimithead2 {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+
+.tableMainBox {
+    border-radius: 8px !important;
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+
+}
+
+.tableMainBoxInner {
+    border-radius: 8px !important;
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+    padding-left: 2%;
+}
+
+
+.mainpageBox {
+    margin: 1rem;
+    padding: 30px;
+    border-radius: 8px !important;
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+}
+
+.impsnote {
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Policies */
+
+.policiesheader {
+    margin-bottom: 20px;
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.required {
+    color: #ED1C24;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.policiescheckbox>span {
+    cursor: pointer;
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+
+/* IMPS */
+
+.mainpageImps {
+    margin: 1.4rem;
+}
+
+.accountlimtImpsupper {
+    margin: 4% 0 8% 0;
+}
+
+.accountlimitrightside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accountlimitaccinfo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.Impsuppertext {
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.Impslowertext {
+    display: flex;
+    justify-content: space-between;
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.payment1mobileprepaidbutton {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 24px;
+}
+
+
+/* IMPS Card */
+
+.beneficiarytitle {
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.beneficiarycard {
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.beneficiarycardtitle {
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+}
+
+/* Beneficiary */
+
+.uppercontainerheading {
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.uppercontainercontent {
+    display: flex;
+    gap: 4%;
+}
+
+
+.uppercontainerleftcontent {
+    width: 48%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+    margin: 20px 0;
+}
+
+.uppercontainerleftcontenttop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftcontenttopleft {
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.uppercontainerrightcontent {
+    display: flex;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.uppercontainerleftcontentmiddle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.uppercontainerleftcontentmiddlecontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    /* width: 40%; */
+    gap: 5px;
+
+}
+
+.middlecontainertitle {
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.middlecontainerinfo {
+    color: #707070;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.uppercontainerrightcontent {
+    width: 48%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+    margin: 20px 0;
+}
+
+.firsttabinfo{
+    padding: 10px 0px;
+}
+.redrow{
+    /* background: rgb(83 177 233 / 93%); */
+    background: var(--tertiary-color);
+    margin: 0%;
+    border-radius: 8px 8px 0px 0px;
+    padding: 0.4rem; 
+    color: var();
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:6vh;
+}
+.SubHeading{
+    color: var(--color-N10, #ffffff);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.sbox{
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+}
+
+@media screen and (max-width:568px) {
+
+    .redrow {
+        /* background: rgb(83 177 233 / 93%); */
+        background: var(--primary-color);
+        margin: 0%;
+        border-radius: 0px 0px 0px 0px;
+        padding: 0.8rem;
+        color: var();
+        font-weight: 600;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 8vh;
+    }
+
+    .SubHeading {
+        color: var(--color-N10, #ffffff);
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Poppins;
+        font-size: var(--tab-heading-font-size);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .sbox {
+        background-color: #EDEDED;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 10px 10px 10px;
+        height: fit-content;
+    }
+
+    .tabAutocomplete {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    .completeForm {
+        width: 100%;
+    }
+
+
+}

@@ -1,0 +1,150 @@
+.uppercontainer{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 10px;
+    gap: 15%;
+}
+
+/* .profilemainpage{
+    margin: -24px !important;
+} */
+.profileupper{
+    padding: 1% 1%;
+}
+.profileupperheader{
+    margin: 15px 0;
+    color: #AD2120;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 0px;  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.uppertitle{
+    width: 25%;
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 450;
+
+}
+
+.uppername{
+    width: 50%;
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.upperupdate{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+/* line-height: 0px; */
+}
+
+.dividerstyle{
+    font-weight: 600;
+    border-color: red;
+}
+
+.uupercontet{
+    display: flex;
+    justify-content: space-between;
+}
+.changebuttons{
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width:568px) {
+
+    .redrow {
+        /* background: rgb(83 177 233 / 93%); */
+        background: var(--primary-color);
+        margin: 0%;
+        border-radius: 0px 0px 0px 0px;
+        padding: 0.8rem;
+        color: var();
+        font-weight: 600;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 8vh;
+    }
+
+    .SubHeading {
+        color: var(--color-N10, #ffffff);
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Poppins;
+        font-size: var(--tab-heading-font-size);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .sbox {
+        background-color: #EDEDED;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 10px 10px 10px;
+        height: fit-content;
+    }
+    
+
+.tableMainBox {
+    border-radius: 8px !important;
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+    padding: 6px;
+    /* height: auto; */
+
+}
+
+    .tabAutocomplete {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    .completeForm {
+        width: 100%;
+    }
+    .firsttabinfo{
+        padding: 10px 8px;
+    }
+
+    .changebuttons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.MidChart {
+  padding: 0vw 1vw;
+  background: rgb(255, 255, 255);
+  margin-top: 1vw;
+  height: 18vw;
+}
+
+.cardSpace {
+  margin-bottom: 2vh;
+}
+
+.BottomContainer {
+  display: flex;
+  gap: 1vw;
+  margin-top: 1vw;
+  height: 25vw;
+}
+
+.BottomContainer > div {
+  background: white;
+  padding: 0.5vw 1vw;
+  flex: 1;
+}
+
+.DashboardContainer {
+  display: flex;
+  gap: 1vw;
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    gap: 1vw;
+  }
+
+  .MidChart {
+    height: 275px;
+    margin: 3vw 3vw;
+    border-radius: 2vw;
+  }
+
+  .BottomContainer {
+    display: grid;
+    height: auto;
+    row-gap: 5vw;
+    margin: 5vw 3vw;
+  }
+
+  .BottomContainer > div {
+    height: 275px;
+    border-radius: 2vw;
+  }
+
+  .DashboardContainer {
+    flex-direction: column;
+    gap: 1vw;
+    margin: 3vw;
+  }
+  
+  .card {
+    padding: 5vw;
+  }
+  
+  .row {
+    margin-bottom: 1vw;
+  }
+  
+  .subject, .percentage {
+    font-size: 4vw;
+  }
+  
+  .percentage {
+    padding: 1vw;
+    border-radius: 2vw;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1vw;
+  }
+
+  .MidChart {
+    height: 30vw;
+    margin: 3vw 3vw;
+    border-radius: 2vw;
+  }
+
+  .BottomContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    row-gap: 5vw;
+    column-gap: 3vw;
+    margin: 5vw 3vw;
+  }
+
+  .BottomContainer > div {
+    height: 30vw;
+    border-radius: 2vw;
+  }
+
+  .DashboardContainer {
+    flex-direction: column;
+    gap: 1vw;
+    margin: 3vw;
+  }
+  
+  .card {
+    /* add flex-basis and flex-grow */
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 3vw;
+  }
+  
+  .row {
+    margin-bottom: 1vw;
+  }
+  
+  .subject, .percentage {
+    font-size: 2vw;
+  }
+  
+  .percentage {
+    padding: 1vw;
+    border-radius: 1vw;
+  }
+  
+  /* make bar and radial bar charts stretch to the end of the @media rule */
+.bar-chart, .radial-bar-chart {
+width: 100%;
+height: 100%;
+}
+}

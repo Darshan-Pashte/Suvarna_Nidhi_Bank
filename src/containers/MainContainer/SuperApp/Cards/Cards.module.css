@@ -1,0 +1,913 @@
+.cardsmainpage {
+    /* width: 84vw; */
+    /* margin: 3rem; */
+}
+
+.cardIcon {
+    max-width: 2rem;
+}
+
+.requiredStar {
+    color: #ff0000;
+    /* Replace with your desired color */
+}
+
+.secondContainer {
+    display: flex !important;
+    justify-content: space-between;
+    /* gap: 5rem; */
+    /* justify-content: space-between !important; */
+    /* gap: 5% !important; */
+    /* padding: var(--none, 0px) !important; */
+
+    /* align-items: flex-start !important; */
+    /* gap: 30px !important; */
+
+}
+
+.secondContainerFirstBox {
+    border-radius: 20px !important;
+    /* background: #FFF !important; */
+    /* box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25) !important;  */
+    /* margin: 2rem !important; */
+}
+
+.secondContainerSecondBox {
+    border-radius: 20px !important;
+    background: #FFF !important;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25) !important;
+
+}
+
+.gridinfo {
+    /* display: flex; */
+    /* padding: 0rem ; */
+    /* padding-left: 2.5rem; */
+    /* padding-top: 1rem;   */
+    /* padding-bottom: 1rem; */
+    /* margin: 2rem; */
+
+
+
+
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    /* gap: 9px; */
+
+    /* left: 108px; */
+
+    /* top: 62px; */
+    /* border-radius: var(--3, 24px); */
+
+
+}
+
+.cardImagemMainDiv {
+    /* padding-left: 5.2rem; */
+    padding-left: 0.2rem;
+    /* padding-top: 1rem; */
+    /* padding-bottom: 1rem;   */
+}
+
+.secondContainerSecondBoxPin {
+    border-radius: 20px;
+    background: var(--Card-Color, #F9F9F9);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cardStatusContainer {
+    --Card-Color: #ECECEC;
+}
+
+.secondContainerInsideBox {
+    display: flex;
+    /* margin: 1.4rem; */
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    max-width: 470px;
+    padding-bottom: 6px;
+
+    align-items: flex-start;
+    gap: var(--3, 24px);
+
+
+}
+
+.cardIcon {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    /* padding: var(--3, 24px) 50px; */
+    padding-left: 5rem;
+    padding-top: 2rem;
+
+    flex-direction: column;
+    align-items: center;
+    gap: var(--2, 24px);
+}
+
+.cardIconTypography {
+    color: #183883 !important;
+
+
+    font-family: Montserrat;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cardStatusTypography {
+    color: #183883;
+
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: normal;
+}
+
+.generatePinTypography {
+    color: var(--Primary-Color, #EE1C25) !important;
+    /* H6 */
+    font-family: Montserrat;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal;
+}
+
+.generatePinTypographyCard {
+    color: var(--Primary-Color, #183883) !important;
+    /* H6 */
+    font-family: Montserrat;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal;
+}
+
+.cardStatusMainBox {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cardBlockStatusTypography {
+    color: var(--Primary-Color, #183883) !important;
+    /* Table Leble & Buttont */
+    font-family: Montserrat;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: normal;
+}
+
+.cardBlockStatusFlex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    /* padding: var(--none, 0px); */
+
+    /* align-items: flex-start; */
+    /* gap: 247px */
+}
+
+.cardBlockStatusMainBox {
+    margin: 2rem;
+}
+
+.cardStatusMainConatiner {
+    padding-top: 1rem;
+}
+
+.regeneratePinMainContainer {
+    padding-top: 1rem;
+}
+
+.regeneratePinMainBox {
+    margin: 1rem;
+    padding-right: 3rem;
+}
+
+.OtpTypography {
+    color: var(--Primary-Color, #EE1C25);
+    /* H5 */
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.secondContainerHeadings {
+    color: var(--color-N10, #101213) !important;
+    /* H6 */
+    font-family: Montserrat;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal;
+    padding-top: 10px;
+    padding-left: 15px;
+
+}
+
+.cardMainHeading {
+    color: var(--Primary-Color, #EE1C25) !important;
+    /* H6 */
+    font-family: Montserrat;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal;
+    padding-top: 2px;
+    padding-left: 20px;
+}
+
+.submitTpinBtn {
+    display: inline-flex;
+    height: 35px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background-color: #fff !important;
+    color: #AD2120 !important;
+    margin-top: 0.3rem !important;
+    font-family: Poppins;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cardsheader {
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0px;
+    /* 0% */
+    margin-bottom: 20px;
+}
+
+.grid3button {
+    padding-top: 1rem !important;
+
+}
+
+.grid1container {
+    width: 465px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    /* background: #183883; */
+    padding: 17px 30px;
+    gap: 10px;
+    /* background-image: url('../../../../assets/CardsPics/debitbackground.png'); */
+    background: var(--common-card-background-color);
+    /* background: linear-gradient(274deg, #AD2120 0.5%, #2E0101 104.74%); */
+
+    background-size: cover;
+}
+
+.grid1containerup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid1containerleft {
+    color: #FFF;
+    font-family: Space Grotesk;
+    font-size: 12.085px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.121px;
+}
+
+.grid1logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.cardNumbertext {
+    color: var(--Base, #FFF);
+
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 14.4px */
+}
+
+.cardNumberNum {
+    color: var(--Base, #FFF);
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.grid1number {
+    /* margin-top: 20px;
+margin-bottom: -15px; */
+}
+
+
+.grid1name {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.grid1number {
+    color: #FFF;
+
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.showDetails {
+    font-size: 0.6rem;
+}
+
+.grid1lowerinfo {
+    display: flex;
+    gap: 8px;
+    /* justify-content: space-between; */
+    color: #FFF;
+    margin-top: 0.3rem;
+
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.cardholdername,
+.expirydate,
+.cvv {
+    color: #FFF;
+    /* font-size: 20px; */
+    font-family: Space Grotesk;
+    /* font-size: 10.057px;
+font-style: normal;
+font-weight: 400; */
+    line-height: 19.114px;
+    /* 200% */
+    letter-spacing: 0.322px;
+}
+
+
+
+.cardinfo {
+    color: #FFF;
+    font-family: Space Grotesk;
+    font-size: 16.114px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26.856px;
+    /* 166.667% */
+    letter-spacing: 0.645px;
+}
+
+.grid2container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    border: 1px solid #EEE;
+    background: #FFF6E7;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    padding: 10px 20px;
+    gap: 30px;
+
+}
+
+.grid2name {
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.grid2switch {
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.grid3container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+
+    padding: 40px 20px 60px;
+    gap: 20px;
+
+    border-radius: 24px;
+    border: 1px solid #C2C2C2;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+}
+
+.gridtitle {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 20px 0px;
+}
+
+.grid3name {
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.grid3optioninfo {
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 6px;
+    border: 1px solid #323232;
+    display: inline-flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.grid4container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+
+
+    padding: 28px 20px;
+    /* gap: 20px; */
+    width: 100%;
+
+    /* border-radius: 24px; */
+    /* border: 1px solid #C2C2C2; */
+    background: #FFF;
+    box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.12);
+}
+
+/* newcrad */
+
+
+.gridtitle {
+    color: var(--color-N10, #101213);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* 0% */
+    margin: 24px 0px 6px 24px;
+    /* padding: 10px 0px 10px 15px; */
+}
+
+.cardsBoxCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 15px; */
+    border-radius: 2.25rem;
+    background: #AD2120;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    /* padding: 15px; */
+    height: 38vh;
+    /* min-height: 70%; */
+}
+
+.cardsBox {
+    /* margin-top: 15px; */
+    border-radius: 2.25rem;
+    background: #FFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    height: 38vh;
+    /* min-height: 70%; */
+}
+
+.mainCardSection {
+    display: flex;
+    flex-direction: column;
+}
+
+/* new css Changes  */
+
+.cardHolderName {
+    color: var(--Base, #FFF);
+
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 14.4px */
+}
+
+.cardHolderNameParent {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.2rem; */
+    /* padding-top: 0.1rem; */
+}
+
+.CardHolderText {
+    color: var(--Base, #FFF);
+
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    /* 22px */
+    text-transform: uppercase;
+}
+
+.expiryDateandcvvParent {
+    display: flex;
+    gap: 4.5rem;
+    /* justify-content: space-around; */
+    padding-top: 0.5rem;
+}
+
+.expiryDatePar {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.1rem; */
+}
+
+.expiryText {
+    color: var(--Base, #FFF);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 14.4px */
+}
+
+.cvvParent,
+.cardblkunblktglbtnParent {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.1rem; */
+}
+
+.cvvText,
+.cardBlkunblkText {
+    color: var(--Base, #FFF);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 14.4px */
+}
+
+.expiryDate,
+.cvvNo {
+    color: var(--Base, #FFF);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.changepinText {
+    color: var(--color-N100, #5A697C);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+.frowtextaffNew {
+    margin-top: -14px;
+}
+
+.submitbtngeneratepin {
+    display: inline-flex;
+    height: 44px;
+    padding: 12px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #AD2120;
+    color: #fff;
+}
+
+.debitcardText {
+    margin-left: 10px;
+    color: var(--color-N10, #101213);
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.sbox {
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    height: fit-content;
+}
+
+.redrow {
+    /* background: rgb(83 177 233 / 93%); */
+    background: var(--primary-color);
+    margin: 0%;
+    border-radius: 8px 8px 0px 0px;
+    padding: 0.4rem;
+    color: var();
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+}
+
+.SubHeading {
+    color: var(--color-N10, #ffffff);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.SubHeading1 {
+    /* color: var(--color-N10, #ffffff); */
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.completeForm {
+    width: 72%;
+}
+
+.tabAutocomplete {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    /* width: 50%; */
+}
+
+.redrows {
+    /* background: rgb(83 177 233 / 93%); */
+    background: var(--primary-color);
+    margin: 0%;
+    border-radius: 8px 8px 0px 0px;
+    padding: 0.4rem;
+    color: var();
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+}
+
+@media only screen and (max-width: 568px) {
+    .OuterCard {
+        width: 100%;
+    }
+
+    .submitTpinBtn {
+        font-size: 0.7rem !important;
+        display: inline-flex;
+        height: 35px;
+        padding: 8px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background-color: #fff !important;
+        color: #AD2120 !important;
+        margin-top: 0.3rem !important;
+        font-family: Poppins;
+    }
+
+    .expiryDateandcvvParent {
+        display: flex;
+        gap: 1rem;
+        /* justify-content: space-around; */
+        padding-top: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+
+    .redrow {
+        /* background: rgb(83 177 233 / 93%); */
+        background: var(--primary-color);
+        margin: 0%;
+        border-radius: 0px 0px 0px 0px;
+        padding: 0.8rem;
+        color: var();
+        font-weight: 600;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 7vh;
+    }
+
+    .redrows {
+        /* background: rgb(83 177 233 / 93%); */
+        background: var(--primary-color);
+        margin: 0%;
+        border-radius: 0px 0px 0px 0px;
+        padding: 0.8rem;
+        color: var();
+        font-weight: 600;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 7vh;
+    }
+
+    .SubHeading {
+        color: var(--color-N10, #ffffff);
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Poppins;
+        font-size: var(--tab-heading-font-size);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .sbox {
+        background-color: #EDEDED;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 10px 10px 10px;
+        height: fit-content;
+    }
+
+    .tabAutocomplete {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    .completeForm {
+        width: 100%;
+    }
+
+    .showDetails {
+        font-size: 0.4rem  !important;
+    }
+
+    .grid1container {
+        width: 465px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 24px;
+        /* background: #183883; */
+        padding: 10px 10px;
+        gap: 10px;
+        /* background-image: url('../../../../assets/CardsPics/debitbackground.png'); */
+        background: var(--common-card-background-color);
+        /* background: linear-gradient(274deg, #AD2120 0.5%, #2E0101 104.74%); */
+
+        background-size: cover;
+    }
+
+    .grid4container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 24px;
+        padding: 10px 10px;
+        /* gap: 20px; */
+        width: 100%;
+        background: #FFF;
+        box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.12);
+    }
+
+}
+
+.completeForm {
+    width: 72%;
+}
+
+.tabAutocomplete {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 34%;
+}

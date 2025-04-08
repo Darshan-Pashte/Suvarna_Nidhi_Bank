@@ -1,0 +1,405 @@
+.mainpagePayment {
+    /* width: 84vw; */
+    /* margin: 1rem; */
+}
+
+.accountlimitaccinfo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.depositAccountInfo {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+/* .mainupperheader {
+    color: var( --main-heading-color);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+} */
+
+.mainupperheader {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 0px 0px 15px;
+}
+
+.mainupperheader1 {
+    margin: 10px 0;
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* .mainlower{
+        margin: 20px;
+    }
+     */
+
+.tableMainBox {
+    padding: 0px;
+    border-radius: 8px !important;
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+}
+
+/* Policies */
+
+.policiesheader {
+    margin-bottom: 20px;
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.required {
+    color: #ED1C24;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.policiescheckbox>span {
+    cursor: pointer;
+    color: #183883;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+/* Fixed Depost Cash Certificate */
+.mainBox {
+    /* margin: 1rem !important; */
+}
+
+.accountsMainHeadingFlex {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.savingsAccount {
+    color: #183883 !important;
+
+
+    font-family: Inter !important;
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 0px;
+    /* 0% */
+}
+
+.savingsAccountSubHeading {
+    color: #000;
+
+
+    font-family: Inter !important;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: normal;
+    padding-top: 2rem;
+}
+
+.savingsAccountBalance {
+    padding-left: 16rem;
+    padding-top: 0rem;
+
+    color: #000;
+
+
+    font-family: Inter !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.savingsAccountBalancecColor {
+    color: #183883 !important;
+
+
+    font-family: Inter !important;
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tableMainBox {
+
+
+    border-radius: 8px !important;
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+}
+
+
+
+.accountsSecondGrid {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15);
+
+}
+
+.iconsTypography {
+    color: #000 !important;
+
+
+    font-family: Inter !important;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;
+}
+
+.accountsMarginGrid {
+    margin: 2rem !important;
+    cursor: pointer;
+
+
+}
+
+.serviceRequestLinkPadding {
+    padding-top: 4.6rem !important;
+}
+
+.iconImagesPaddingType1 {
+    padding-left: 9px !important;
+}
+
+.iconImagesPaddingType2 {
+    padding-left: 25px !important;
+}
+
+.depositcardmain {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+
+}
+
+.depositcard {
+    width: 30%;
+
+    border-radius: var(--1, 8px);
+    /* background: rgba(218, 226, 246, 0.50); */
+    /* background: v--common-login-background-colorar(--sidebar-tab-background-color); */
+    background: var(--common-login-background-color);
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.depositcardtitle {
+    text-align: center;
+}
+
+.depositcardtitle1 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.nodata {
+    margin: 10px;
+    color: var(--Primary-Color, #183883);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.redrow {
+    /* background: rgb(83 177 233 / 93%); */
+    background: var(--primary-color);
+    margin: 0%;
+    border-radius: 8px 8px 0px 0px;
+    padding: 0.4rem;
+    color: var();
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    /* margin-top: 4%; */
+}
+
+.SubHeading {
+    color: var(--color-N10, #ffffff);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sbox {
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    height: fit-content;
+}
+
+.frowdataaff {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.frowtextaff {
+    color: #323232;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: var(--font-size-small-label);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal
+}
+.frow1aff{
+    width: 20vw;
+}
+@media only screen and (max-width: 568px) {
+    .redrow {
+        /* background: rgb(83 177 233 / 93%); */
+        background: var(--primary-color);
+        margin: 0%;
+        border-radius: 0px 0px 0px 0px;
+        padding: 0.8rem;
+        color: var();
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8vh;
+    }
+
+    .SubHeading {
+        color: var(--color-N10, #ffffff);
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Poppins;
+        font-size: var(--tab-heading-font-size);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .sbox {
+        background-color: #FFF;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        height: fit-content;
+    }
+
+    .depositcardmain {
+        display: flex;
+        gap: 5%;
+        margin-top: 10px;
+
+    }
+
+    .depositcard {
+        margin-bottom: 15px;
+        width: 47%;
+
+        border-radius: var(--1, 8px);
+        /* background: rgba(218, 226, 246, 0.50); */
+        /* background: var(--sidebar-tab-background-color); */
+        background: #FFD8D8;
+        box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        /* margin-bottom: 30px; */
+    }
+
+    .accountlimitaccinfo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .frow1aff{
+        width: 65%;
+    }
+    .frowdataaff {
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        align-items: center;
+    }
+
+    .tableMainBox {
+        padding: 0px;
+        border-radius: 8px !important;
+        background: #FFF !important;
+        box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+    }
+}

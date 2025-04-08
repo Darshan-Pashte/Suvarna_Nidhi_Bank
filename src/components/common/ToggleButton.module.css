@@ -1,0 +1,116 @@
+/* .toggle-switch {
+    width: 100px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  
+  .toggle-switch .slider {
+    width: 34px;
+    height: 34px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: left 0.3s;
+  }
+  
+  .toggle-switch.on {
+    background-color: #4caf50;
+  }
+  
+  .toggle-switch.on .slider {
+    left: 63px;
+  }
+  
+  .toggle-switch .label {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+  }
+   */
+
+   /* Filename: ./components/ToggleSwitch.css*/
+
+.container {
+/* text-align: center; */
+}
+.toggle_switch {
+position: relative;
+width: 95px;
+display: inline-block;
+text-align: left;
+top: 4px;
+}
+.checkbox {
+display: none;
+}
+.label {
+display: block;
+overflow: hidden;
+cursor: pointer;
+border: 0 solid #bbb;
+border-radius: 20px;
+}
+.inner {
+display: block;
+width: 200%;
+margin-left: -100%;
+transition: margin 0.3s ease-in 0s;
+}
+.inner:before,
+.inner:after {
+float: left;
+width: 50%;
+height: 30px;
+padding: 0;
+line-height: 36px;
+color: #fff;
+font-weight: 400;
+box-sizing: border-box;
+}
+.inner:before {
+content: "Block";
+padding-left: 12px;
+background-color: #ED3237;
+color: #fff;
+line-height: 30px;
+}
+.inner:after {
+content: "Active";
+padding-right: 13px;
+background-color: #00C851;
+color: #fff;
+text-align: right;
+line-height: 30px;
+}
+.switch {
+display: block;
+width: 25px;
+margin: 3px;
+background: #fff;
+position: absolute;
+top: 0;
+bottom: 0;
+right: 65px;
+border: 0 solid #bbb;
+border-radius: 25px;
+transition: all 0.3s ease-in 0s;
+}
+.checkbox:checked + .label .inner {
+margin-left: 0;
+}
+.checkbox:checked + .label .switch {
+right: 0px;
+}

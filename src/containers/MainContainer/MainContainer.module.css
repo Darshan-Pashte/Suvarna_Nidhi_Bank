@@ -1,0 +1,71 @@
+.DraggableContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 5vh;
+  left: -3vw;
+}
+
+.Title {
+  font-weight: 600;
+  font-size: 2vw;
+  margin-bottom: 2rem;
+}
+
+.Dashboard{
+  width: 84vw;
+  /* overflow: scroll; */
+  height: 100%;
+  padding: 16px 16px 60px 16px !important;
+  /* background-color: #f5f6fA !important; */
+  background-color: #EDEDED;
+  overflow-x: hidden;
+  /* background-color: var( --body-background-color) !important; */
+
+}
+
+.loader {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+}
+.loader img{
+  height: 20%;
+  width: 20%;
+}
+
+
+@media only screen and (max-width: 568px){
+  .Dashboard{
+    width: auto;
+    overflow: none;
+    height: 100%;
+    padding: 0px !important;
+    /* background-color: #f5f6fA !important; */
+    background-color: #EDEDED;
+    overflow-x: hidden;
+ 
+    /* margin-left: 5px; */
+  }
+  .DashboardHome{
+    width: auto;
+    overflow: none;
+    height: 100%;
+    padding: 0px !important;
+    /* background-color: #f5f6fA !important; */
+    background-color: #EDEDED;
+    overflow-x: hidden;
+ 
+    /* margin-left: 5px; */
+  }
+  
+}

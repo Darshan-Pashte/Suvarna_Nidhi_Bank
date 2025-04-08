@@ -1,0 +1,69 @@
+.Container {
+  width: 20vw;
+  height: 4.8vw;
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: row;
+  border: 0.1vw dashed grey;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+.leftColumn {
+  flex-basis: 40%;
+  align-items: center;
+  justify-content: center;
+}
+.RightColumn {
+  height: 4.1vw;
+  font-size: 0.7vw;
+  margin-top: 0.3vw;
+  flex-basis: 60%;
+  margin-left: 0.9vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  color: grey;
+}
+.UploadButton {
+  background-color: #ffffff00;
+  color: #054aed;
+  padding: 0.5vw 1vw;
+  border: solid #054aed 0.1vw;
+  border-radius: 4px;
+  font-size: 0.8vw;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0.5vw;
+}
+
+.FileActions {
+  margin-top: 1vw;
+  margin-left: 4vw;
+}
+.FileActions button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1vw;
+  width: 1.4vw;
+  height: 1.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.FileActions button:hover {
+  background-color: #c0392b;
+}
+
+.File {
+  display: flex;
+  border: 1px dotted;
+  border-radius: 1vw;
+  width: fit-content;
+  padding: 0vw 1vw;
+}

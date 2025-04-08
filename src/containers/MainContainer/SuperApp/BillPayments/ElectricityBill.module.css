@@ -1,0 +1,259 @@
+.mainpagePayment{
+  /* width: 84vw; */
+  margin: 3rem;
+}
+
+.mainpagePayment{
+  /* width: 84vw; */
+  margin: 3rem;
+}
+
+.mainupper{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mainupperheader{
+color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: 0px; 
+}
+
+.mainupperheader1{
+  margin-top: 1%;
+  color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 500;
+line-height: 0px; 
+}
+
+
+.mainupperboxes{
+width: 60%;
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10%;
+  border-radius: 24px;
+border: 1px solid #EEE;
+background: #FFF6E7;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+padding: 50px 40px 30px 40px;
+flex-wrap: wrap;
+}
+.mainupperbox1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 15% ;
+}
+
+.box1icon{
+  width: 100%;
+  height: 100%;
+}
+
+.mainlower{
+  margin-top: 5%;
+}
+
+.tableMainBox{
+  border-radius: 8px !important;
+background: #FFF !important;
+box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ;
+}
+
+.required{
+  color: #ED1C24;
+
+}
+
+/* Payment Cards */
+
+.cardpage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.boxs{
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+flex-wrap: wrap;
+  gap: 7%;
+  cursor: pointer;
+  }
+
+  /* Payment1Mobile Page */
+  .payment1mobilenewpage{
+      /* width: 84vw; */
+      margin: 1rem 3rem;
+  }
+
+  .newpageheader{
+      margin-bottom: 2%;
+      color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: 0px; /* 0% */
+  }
+
+  .payment1mobileprepaiddropdowntext{
+display: flex;
+align-items: flex-end;
+align-items:flex-end;       
+color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+
+  .payment1mobileprepaidbutton{
+      margin-top: 4%;
+      /* margin-left: 1%; */
+      /* display: flex; */
+      /* gap:3%; */
+  }
+
+
+
+/* FetchBiil Css */
+
+.uppertitle{
+  color: #323232 !important;
+
+
+  font-family: Inter !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+/* line-height: 0px; */
+}
+
+.uppername{
+  color: #000 !important;
+
+font-family: Inter !important;
+font-size: 14px !important;
+font-style: normal;
+font-weight: 400 !important;
+/* line-height: 0px; */
+}
+.uppernameDes{
+  color: #323232 !important;
+
+
+font-family: Inter !important;
+font-size: 12px !important;
+font-style: normal;
+font-weight: 400 !important;
+line-height: normal;
+}
+.upperDate{
+  color: #707070;
+
+
+  font-family: Inter !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal;
+}
+  
+.upperBillAmount{
+  color: #183883 !important;
+
+
+font-family: Inter !important;
+font-size: 12px !important;
+font-style: normal;
+font-weight: 600 !important;
+line-height: normal;
+}
+
+
+
+
+/* SuccesFull Css */
+.PaymentSuccesfullTypo{
+  color: #323232 !important;
+
+ 
+  font-family: Inter !important;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+
+}
+.PaymentSuccesfull{
+  color: #323232 !important;
+
+ 
+  font-family: Inter !important;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+  /* padding-left: 5rem !important; */
+}
+.RighgtClickPic{
+  width: 64px !important; 
+height: 64px !important;
+
+/* padding-left: 40px; */
+}
+.leftSideDes{
+  color: #323232 !important;
+
+ 
+  font-family: Inter !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal;
+}
+.RightSideDes{
+  color: #000 !important;
+
+
+font-family: Inter !important;
+font-size: 16px !important;
+font-style: normal;
+font-weight: 400 !important; 
+line-height: normal;
+}
+.Button{
+  border-radius: 8px !important;
+background: #183883 !important;
+color: #FFF !important;
+margin: 1rem !important;
+
+}
+.ButtonMainDiv{
+  padding-left: 30rem;
+}

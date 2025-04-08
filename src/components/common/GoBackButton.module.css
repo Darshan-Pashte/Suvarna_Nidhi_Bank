@@ -1,0 +1,53 @@
+.mainbuttonpage{
+    color: var(--button-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    width: 3vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+    &:hover{
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border: 1px solid #FFF;
+        cursor: pointer;
+        width: 3vw;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 568px){
+    .mainbuttonpage{
+        color: var(--button-color);
+        background-color: var(--secondary-color);
+        border-radius: 12px;
+        width: 12vw;
+        padding-left: 8px;
+        padding-right: 8px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4px;
+        margin-left: 5px;
+        &:hover{
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: 1px solid #FFF;
+            cursor: pointer;
+            width: 12vw;
+            padding-left: 8px;
+            padding-right: 8px;
+            height: 25px;
+        }
+    
+    }
+}

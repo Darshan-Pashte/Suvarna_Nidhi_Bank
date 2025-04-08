@@ -1,0 +1,55 @@
+.mainBox{
+    margin: 3rem !important;
+}
+.savingsAccountSubHeading{
+color: #000;
+font-family: Inter !important;
+font-size: 16px !important;
+font-style: normal;
+font-weight: 500 !important;
+line-height: normal;
+padding-top: 2rem;
+}
+.savingsAccount{
+    color: #183883 !important;
+
+    
+    font-family: Inter !important;
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 0px; /* 0% */
+}
+.accountsSecondGrid{
+border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15);
+}
+
+.iconsTypography{
+color: #000 !important;
+font-family: Inter !important;
+font-size: 12px !important;
+font-style: normal;
+font-weight: 400 !important;
+line-height: normal;
+}
+.accountsMarginGrid{
+    margin: 2rem !important;
+} 
+.iconImagesPaddingType1{
+    /* padding-left: 9px !important; */
+}
+.iconImagesPaddingType2{
+    /* padding-left: 25px !important; */
+}
+.iconImagesStockMarket{
+    /* padding-left: 9px !important; */
+}
+
+.Button{
+    border-radius: 8px !important;
+background: #183883 !important;
+color: #FFF !important;
+margin: 1rem !important;
+}

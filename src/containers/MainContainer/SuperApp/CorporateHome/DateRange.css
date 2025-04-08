@@ -1,0 +1,71 @@
+/* DateRange.css */
+
+/* Style for the container */
+.DateRange {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  /* Style for each date picker */
+  .DatePickerContainer {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Style for the date picker input */
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+  
+  .react-datepicker__input-container {
+    width: 100%;
+  }
+  
+  /* Style for the selected date */
+  .react-datepicker__day--selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Style for the hovered date */
+  .react-datepicker__day--keyboard-selected,
+  .react-datepicker__day--in-selecting-range,
+  .react-datepicker__day--in-range {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Style for the today's date */
+  .react-datepicker__day--today {
+    font-weight: bold;
+  }
+  
+  /* Style for the arrow icons */
+  .react-datepicker__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #007bff; */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    padding: 2px;
+  }
+  
+  .react-datepicker__navigation--next {
+    margin-left: 10px;
+  }
+  
+  .react-datepicker__navigation--previous {
+    margin-right: 10px;
+  }
+  

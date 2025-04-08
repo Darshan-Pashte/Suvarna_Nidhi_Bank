@@ -1,0 +1,50 @@
+.mainBox{
+    margin: 1rem !important;
+}
+.moveSlider{
+    color: #183883 !important;
+
+
+font-family: Inter !important;
+font-size: 15px !important;
+font-style: normal;
+font-weight: 500 !important;
+line-height: 0px ; /* 0% */
+}
+.loanAmountTyography{
+    color: #183883 !important;
+
+
+font-family: Inter !important;
+font-size: 12px !important;
+font-style: normal ;
+font-weight: 500 !important;
+line-height: normal;
+}
+
+.secondGridMainBox{
+    border-radius: 8px;
+border: 1px solid #FFE4B8;
+margin: 1rem;
+background: #FFF6E7;
+}
+.selectTenureTypography{
+    color: #183883 !important;
+
+
+    font-family: Inter !important;
+    font-size: 15px !important;
+    font-style: normal ;
+    font-weight: 500 !important;
+    line-height: normal;
+}
+.EMItypography{
+    color: #183883 !important;
+
+
+    font-family: Inter !important;
+    font-size: 24px !important;
+    font-style: normal ;
+    font-weight: 500 !important;
+    line-height: normal;
+}

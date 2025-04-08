@@ -1,0 +1,85 @@
+.mainpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+width: 35%;
+height: 80%;
+flex-shrink: 0;
+border-radius: 16px;
+background: #FFF;
+box-shadow: 0px 2px 9px -4px rgba(47, 47, 47, 0.25);
+margin: auto;
+}
+.successlogo{
+    display: flex;
+    justify-content: center;
+    padding-top: 2vw;
+}
+.ammount{
+    color: var(--Neutrals-Neutral1000, var(--Neutrals-Neutral1000, #172B4D));
+leading-trim: both;
+text-edge: cap;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.heading{
+    color: var(--Success, var(--Success, #189877));
+leading-trim: both;
+text-edge: cap;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 0%; /* 0px */
+}
+.toppart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.divider{
+   padding: 20px;
+}
+.redtext{
+    color: #AE2121;
+leading-trim: both;
+text-edge: cap;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 16.8px */
+text-transform: capitalize;
+}
+.bottompart{
+    padding: 0vw 0vw 1vw 2vw;
+}
+.text{
+    color: #0A0D14;
+leading-trim: both;
+text-edge: cap;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 16.8px */
+text-transform: capitalize;
+}
+.boldtext{
+    color: var(--color-N10, #101213);
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}

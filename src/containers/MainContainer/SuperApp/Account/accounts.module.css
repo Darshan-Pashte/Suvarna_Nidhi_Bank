@@ -1,0 +1,368 @@
+.sbox{
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    height: fit-content;
+}
+  
+  .redrow{
+    /* background: rgb(83 177 233 / 93%); */
+    background: var(--tertiary-color);
+    margin: 0%;
+    border-radius: 8px 8px 0px 0px;
+    padding: 0.4rem; 
+    color: var();
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:6vh;
+}
+.mainBox {
+    /* margin: 1rem !important; */
+}
+
+
+
+.savingsAccount {
+    /* color: #183883 !important; */
+
+    color: var(--main-heading-color) !important;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    /* line-height: 0px; */
+    /* 0% */
+}
+
+.savingsAccountSubHeading {
+    color: var(--color-N10, #101213);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* 0% */
+    
+    /* padding-top: 2rem; */
+}
+.SubHeading{
+    color: var(--color-N10, #ffffff);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.balanceHeading{
+    color: var(--color-N10, #ffffff);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* 0% */
+    margin: 8px 0px 6px 20px;
+}
+.savingsAccountSubHeading1 {
+    color: var(--main-heading-color);
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: normal;
+    padding-top: 2rem
+}
+
+.savingsAccountBalance {
+    display: flex;
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: normal !important;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.balanceShow {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 23vw;
+}
+
+.balancetext {
+    color: var(--color-N10, #101213);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.savingsAccountBalancecColor {
+    font-family: Poppins;
+    color: #FFF !important;
+    font-size: 0.9rem !important;
+    font-style: normal !important;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.mainBoxAccount {
+
+    border-radius: 8px !important;
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+}
+
+.accountDetails {
+    color: var(--Primary-Color, #183883);
+
+    /* H6 */
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.tableMainBox {
+    /* border-radius: 8px !important; */
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+    margin-top: 4px !important;
+    margin-bottom: 30px;
+}
+
+.tableMainBoxsecond {
+    /* background: #FFF !important; */
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+    margin-top: 6px !important;
+}
+
+.accountsSecondGrid {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15);
+}
+
+.accountBox {
+    min-height: 80%;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.iconsTypography,
+.iconsTypography1,
+.iconsTypography2 {
+    /* color: #000 !important;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal; */
+    text-align: center;
+    color: var(--Primary-Color, #183883);
+
+    /* H6 */
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+/* .iconImagesPaddingType1 img{
+    width: 15%;
+    height: 15%;
+} */
+
+.accountsMarginGrid {
+    margin: 2rem !important;
+    cursor: pointer;
+}
+
+.serviceRequestLinkPadding {
+    padding-top: 4.6rem !important;
+}
+
+/* .iconImagesPaddingType1 {
+    padding-left: 9px !important;
+} */
+
+/* .iconImagesPaddingType2 {
+    padding-left: 25px !important;
+} */
+.cardsBox {
+    margin-top: 10px;
+    border-radius: 1.25rem;
+    background: #FFF;
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    height: 90%;
+    /* min-height: 70%; *
+}
+
+.accountsMarginBox{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 15px;
+    /* width: 50%; */
+  
+}
+.mainAccountHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gridtitle {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 30px 0px 0px 15px;
+}
+
+.nodata {
+    margin: 20px;
+    text-align: center;
+    color: var(--Primary-Color, #183883);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.accountBoxImage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.subredrowHeading
+{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+@media only screen and (max-width: 568px){
+    .SubHeading{
+        color: var(--color-N10, #ffffff);
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Poppins;
+        font-size: var(--tab-heading-font-size);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .sbox{
+        background-color: #fff;
+        border-radius: 0px 0px 8px 8px;
+        box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 8px 8px 30px 8px;
+        height: fit-content;
+    }
+  .redrow{
+    /* background: rgb(83 177 233 / 93%); */
+    background: var(--tertiary-color);
+    margin: 0%;
+    border-radius: 0px 0px 0px 0px !important;
+    padding: 0.4rem; 
+    color: var();
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    align-items: flex-start;
+    height:9vh;
+   
+    /* align-items: flex-start; */
+}
+.cardsBox {
+    margin-top: 0px;
+    border-radius: 1.5rem;
+    background: #FFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px 10px 10px 10px;
+    height: auto;
+    /* min-height: 70%;
+    /* min-height: 70%; *
+}
+.tableMainBox {
+    /* border-radius: 8px !important; */
+    background: #FFF !important;
+    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
+    margin-top: 4px !important;
+    margin-bottom: 10px;
+}
+.balanceHeading{
+    color: var(--color-N10, #ffffff);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: var(--tab-heading-font-size);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* 0% */
+    margin: 8px 0px 6px 20px;
+}
+.savingsAccountBalancecColor {
+    font-family: Poppins;
+    color: #FFF !important;
+    font-size: var(--tab-heading-font-size) !important;
+    font-style: normal !important;
+    font-weight: 500;
+    line-height: normal;
+}
+.savingsAccountSubHeading {
+    color: var(--color-N10, #101213);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: var(--font-size-small-label);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* margin-top: 20px; */
+    /* 0% */
+    
+    /* padding-top: 2rem; */
+}
+}

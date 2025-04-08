@@ -1,0 +1,28 @@
+.card {
+  padding: 1.4vw;
+  border-radius: 0.5vw;
+  box-shadow: 0.2vw 0.21vw 0.21vw rgba(0, 0, 0, 0.1);
+  background: #ffff;
+  display: grid;
+  row-gap: 0.51vw;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+
+.subject {
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+.percentage {
+  display: inline-block;
+  color: white;
+  font-size: 1vw;
+  padding: 0.1vw 1.2vw;
+  border-radius: 0.25vw;
+}

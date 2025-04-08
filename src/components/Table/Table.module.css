@@ -1,0 +1,139 @@
+.NewTableComponent table > * {
+  font-size: 1vw;
+}
+
+.NewTableComponent {
+  margin-top: 1.5vw;
+}
+
+.NewTableComponent th {
+  font-weight: 700;
+  color: #34435a;
+  text-align: center;
+}
+
+.NewTableComponent table {
+  width: 100%;
+  border-collapse: separate;
+}
+
+.NewTableComponent thead {
+  background-color: rgb(230, 233, 238);
+  color: rgb(43, 45, 66);
+  height: 3.4vw;
+  z-index: 1;
+}
+
+.NewTableComponent thead,
+tbody tr {
+  border-radius: 0.52vw !important;
+}
+.NewTableComponent tbody tr {
+  background: white;
+  margin-top: 0.2vw;
+  height: 3.8vw;
+  color: rgb(107, 108, 123);
+}
+
+.NewTableComponent tbody tr:hover {
+  background: white;
+  cursor: pointer;
+  box-shadow: rgb(43 45 66 / 14%) 0px 3px 10px;
+}
+
+.NewTableComponent thead,
+.NewTableComponent tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.NewTableComponent td {
+  text-align: center;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: content-box;
+  height: 2.75vw;
+}
+
+.TableTopBar {
+  display: flex;
+  justify-content: space-between;
+  height: 4vw;
+  align-items: baseline;
+}
+
+.TableTopBar .leftContent {
+  display: flex;
+  column-gap: 1vw;
+}
+
+.TableTopBar .rightContent {
+  display: flex;
+  align-items: center;
+  column-gap: 1vw;
+}
+
+.PaginationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999999;
+}
+
+.PaginateBreif {
+  color: #999999;
+  font-weight: 500;
+}
+
+.PaginateBreif b {
+  color: #5e6569;
+}
+
+.PageSizeChanger {
+  display: flex;
+  column-gap: 0.5vw;
+  align-items: center;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.DropMenu {
+  width: 4vw;
+  background: white;
+  border-radius: 8px;
+  color: #999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1vw;
+  overflow: hidden;
+}
+
+.DropMenu .EachMenu {
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  padding: 0.7vw 0;
+}
+
+.DropMenu .EachMenu:hover {
+  color: #34435a;
+  background: rgb(242, 242, 242);
+}
+
+.SelectedMenu {
+  color: #34435a;
+  background: rgb(239, 229, 255);
+}
+
+.MiniDropdown {
+  color: rgb(105, 48, 202);
+  cursor: pointer;
+}
+
+.MiniDropdown img {
+  height: 0.6vw;
+}

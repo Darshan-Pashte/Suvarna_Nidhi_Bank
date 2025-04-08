@@ -1,0 +1,245 @@
+.imageSlider{
+    width: 50%;
+    /* height: 60%; */
+    /* margin: auto; */
+}
+
+
+/* Card Slider */
+.cardsmainpage{
+    /* width: 84vw; */
+    margin: 3rem;
+}
+
+.cardsheader{
+    color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 0px; /* 0% */
+margin-bottom: 20px;
+}
+
+.grid1container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+background: #183883;
+padding: 10px 20px;
+gap: 70px;
+    
+}
+
+.gridinfo{
+    /* margin: 0px 0px 0px 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.grid1mainlogo{
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid1number{
+margin-top: 20px;
+margin-bottom: -15px;
+}
+
+
+.grid1name{
+color: #FFF;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.grid1number{
+    color: #FFF;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+
+.grid1lowerinfo{
+    display: flex;
+  justify-content: space-between;
+  /* gap: 100px; */
+      color: #FFF;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.expirydate ,.bal{
+    font-size: 18px;
+}
+
+.expirydateinfo ,.cvv{
+    font-size: 11px;
+    word-spacing: 3px;
+    text-transform: capitalize !important;
+}
+.grid2container{
+    display: flex;
+    flex-direction: column;
+border-radius: 24px;
+border: 1px solid #EEE;
+background: #FFF6E7;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+padding: 50px 40px;
+gap: 30px;
+    
+}
+
+
+
+.mainupperboxes{
+    display: flex;
+    gap: 50px;
+}
+
+.mainupperbox1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1text{
+    text-align: center;
+}
+
+.grid2name{
+    color: #183883;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.grid1switch{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.grid3container{
+    display: flex;
+    flex-direction: column;
+border-radius: 24px;
+
+padding: 40px 20px 60px;
+gap: 20px;
+
+    border-radius: 24px;
+border: 1px solid #C2C2C2;
+background: #FFF;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+}
+
+.gridtitle{
+    color: #000;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 70px  18px 20px;
+}
+
+.titleStatement{
+    color: #000;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 70px  18px 20px;
+}
+
+
+.tableMainBox{
+    border-radius: 8px !important;
+background: #FFF !important;
+box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ;
+}
+
+
+.nodata{
+    margin: 20px;
+    color: var(--Primary-Color, #FFF);
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 180px;
+}
+
+
+@media screen and (max-width: 568px){
+    .imageSlider{
+        width: 85%;
+    }
+}
+
+
+.imageSliderDefault{
+    width: 100%;
+    height: 60%;
+    background-color: aliceblue;
+    
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    left:40px;
+}
+
+/* slider.module.css */
+
+/* Override default OwlCarousel dot styles */
+
+/* Logo Slider */
