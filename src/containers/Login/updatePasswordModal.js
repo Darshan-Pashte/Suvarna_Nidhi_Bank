@@ -24,7 +24,8 @@ import Loader from "../../components/common/loader";
 import { useState } from "react";
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import { LoadingButton } from "@mui/lab";
-import { logout } from '../../../.././SuperApp/src/store/authSlice';
+// import { logout } from '../../../.././SuperApp/src/store/authSlice';
+import { logout } from '../../store/authSlice';
 import { useNavigate } from "react-router-dom";
 
 const style = {
