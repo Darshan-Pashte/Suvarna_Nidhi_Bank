@@ -82,6 +82,10 @@ export async function postApiData(url, payload, headers = {}) {
       sessionStorage.setItem("updatedToken", response.headers?.authorization);
     }
 
+    // Log response headers
+    // if (response.status) {
+    //   return validateResponse(response.data);
+    // }
 
     const x = JSON.stringify(response.data) + "KuVUmJvu9BEiEqdbNiIZWg" + "netbanking";
     const hashedDataResponse = CryptoJS.SHA256(x).toString(CryptoJS.enc.Hex);
@@ -93,7 +97,6 @@ export async function postApiData(url, payload, headers = {}) {
       return;
     }
 
-    // Log response headers
 
     if (response.data.respCode === "IS") {
       await Swal.fire({

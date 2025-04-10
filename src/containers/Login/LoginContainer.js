@@ -423,7 +423,7 @@ export default function LoginContainer() {
       <div className={classes.bottomcontent}>
         <div className={classes.bottomcopyrightinfo}>
           <div className={classes.bottominfo}>
-            Copyright 2024 | All Rights Reserved By {bankContactInfo?.BANKname}
+            Copyright 2025 | All Rights Reserved By {bankContactInfo?.BANKname}
           </div>
           <div className={classes.bottominfo2}>
             Developed by{" "}

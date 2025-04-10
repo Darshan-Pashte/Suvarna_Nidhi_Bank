@@ -430,7 +430,7 @@ const [receiptData, setReceiptData] = useState([]);
     // useEffect(() => {
     //   getTransactionListView(1, payloadData);
     // }, []);
-
+console.log("User = ",user)
 
     const accNo = watch("accNo");
     console.log("user", user);
@@ -438,7 +438,8 @@ const [receiptData, setReceiptData] = useState([]);
         user?.accountDetails &&
         user?.accountDetails?.map((item) => ({
             code: item.brCode,
-            value: item.accNo,
+            // value: item.accNo,
+            value: item.virtualAccNo,
             name: item.name,
             acctype: item.acctype,
         }));
