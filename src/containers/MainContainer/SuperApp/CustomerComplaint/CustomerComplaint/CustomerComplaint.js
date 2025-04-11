@@ -328,7 +328,7 @@ const CustomerComplaint = () => {
                 </div>
                 <div className={classes.secondDiv}>
                   <div className={classes.rightBankingHead}>
-                    <div className={classes.rightBanking}>Internet Banking Sil Support Team</div>
+                    <div className={classes.rightBanking}>Internet Banking Support Team</div>
                     <div >
                       <div style={{ padding: "10px" }}> <span style={{ fontWeight: "600" }}>Helpdesk:</span> <span>{bankContactInfo?.ContactNo}</span></div>
                       <div style={{ padding: "10px" }}><span style={{ fontWeight: "600" }}>Office Hours:</span> <span>{bankContactInfo?.OfficeHours}
