@@ -262,7 +262,7 @@ const CustomerComplaint = () => {
                               // inputProps: { maxLength: 11 },
                             }}
                             // backgroundColor={true}
-                            regExp={/^[A-Za-z., ]+$/}
+                            regExp={/^[A-Za-z.,0-9 ]+$/}
                             rules={{
                               required:
                                 "Subject" +
@@ -298,7 +298,7 @@ const CustomerComplaint = () => {
                               // inputProps: { maxLength: 11 },
                             }}
                             // backgroundColor={true}
-                            regExp={/^[A-Za-z., ]+$/}
+                            regExp={/^[A-Za-z.,0-9 ]+$/}
                             rules={{
                               required:
                                 "Message " +
@@ -332,7 +332,7 @@ const CustomerComplaint = () => {
                     <div >
                       <div style={{ padding: "10px" }}> <span style={{ fontWeight: "600" }}>Helpdesk:</span> <span>{bankContactInfo?.ContactNo}</span></div>
                       <div style={{ padding: "10px" }}><span style={{ fontWeight: "600" }}>Office Hours:</span> <span>{bankContactInfo?.OfficeHours}
-                        (Bank remains closed on Sundays and every 2nd and 4th Saturday)
+                        (Office remains closed on Sundays and every 2nd and 4th Saturday)
                       </span></div>
                       <div style={{ padding: "10px" }}><span style={{ fontWeight: "600" }}>Address:</span> <span>{bankContactInfo?.address}</span></div>
                       <div style={{ padding: "10px" }}><span style={{ fontWeight: "600" }}>Email:</span> <span>{bankContactInfo?.email}</span></div>

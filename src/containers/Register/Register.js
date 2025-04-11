@@ -306,17 +306,17 @@ const Register = () => {
 
               <div className="container">
                 <ul className="tab-list">
-                  <li
+                  {/* <li
                     style={{ fontSize: "14px" }}
                     className={`tabs ${getActiveClass(1, "active-tabs")}`}
                     onClick={() => toggleTab(1)}
                   >
                     With Card
-                  </li>
+                  </li> */}
                   <li
                     style={{ fontSize: "14px" }}
-                    className={`tabs ${getActiveClass(2, "active-tabs")}`}
-                    onClick={() => toggleTab(2)}
+                    className={`tabs ${getActiveClass(1, "active-tabs")}`}
+                    onClick={() => toggleTab(1)}
                   >
                     With Customer No.
                   </li>
@@ -325,7 +325,7 @@ const Register = () => {
 
               {/* <div className={classes.tabBodyContent}> */}
               <div className="content-container">
-                <div
+                {/* <div
                   className={`content ${getActiveClass(1, "active-content")}`}
                 >
                   <RegisterContext.Provider
@@ -338,10 +338,10 @@ const Register = () => {
                   >
                     <LoginContainer1 />
                   </RegisterContext.Provider>
-                </div>
+                </div> */}
 
                 <div
-                  className={`content ${getActiveClass(2, "active-content")}`}
+                  className={`content ${getActiveClass(1, "active-content")}`}
                 >
                   <div className="container">
                     <ul className="tab-list"></ul>
