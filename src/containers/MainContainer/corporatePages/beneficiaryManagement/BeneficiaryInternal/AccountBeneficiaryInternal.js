@@ -130,7 +130,8 @@ const AccountBeneficiaryInternalCorporate = () => {
   // }, []);
 
   useEffect(() => {
-    if (watch("accnumber") && /^[0-9]{9,32}$/.test(watch("accnumber")))
+    // if (watch("accnumber") && /^[a-ZA-Z0-9]{9,32}$/.test(watch("accnumber")))
+    if (watch("accnumber") )
       validateAccount();
   }, [debouncedSearchTerm]);
 
