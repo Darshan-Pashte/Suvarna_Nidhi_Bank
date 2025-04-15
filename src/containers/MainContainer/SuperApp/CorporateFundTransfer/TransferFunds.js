@@ -269,10 +269,10 @@ const TransferFunds = ({ accList }) => {
   //     value: item.nickname,
   //   }));
 
-  const externalList = (beneficiaryList || []).filter((item) => item.beneType == "E").map((ele) => ({ code: ele.accNo, value: ele.nickname, name: ele.name, benIFSC: ele.ifsc }))
+  const externalList = (beneficiaryList || []).filter((item) => item.beneType == "E").map((ele) => ({ code: ele.virtualAccNo, value: ele.nickname, name: ele.name, benIFSC: ele.ifsc }))
   externalList.push({ code: "other", value: "Other" })
 
-  const internalList = (beneficiaryList || []).filter((item) => item.beneType == "I").map((ele) => ({ code: ele.accNo, value: ele.nickname, name: ele.name, benIFSC: ele.ifsc }));
+  const internalList = (beneficiaryList || []).filter((item) => item.beneType == "I").map((ele) => ({ code: ele.virtualAccNo, value: ele.nickname, name: ele.name, benIFSC: ele.ifsc }));
 
   // useEffect(() => {
   //   const accountNumber = watch('beneAccNo');
