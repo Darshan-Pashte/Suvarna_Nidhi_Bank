@@ -106,7 +106,7 @@ const TransactionReceipt = () => {
        
                const importedImage = async () => {
                    try {
-                       const logoImage = await import(`../../../../../assets/Banks/${bankNames}/images/Logo.svg`);
+                       const logoImage = await import(`../../../../../../assets/Banks/${bankNames}/images/Logo.svg`);
                        setCurrentLimit(logoImage.default);
        
                        // Convert the logo to base64 after it is set

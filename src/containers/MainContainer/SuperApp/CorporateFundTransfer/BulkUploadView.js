@@ -662,7 +662,7 @@ const BulkUploadView = () => {
     filterType: "dropdown",
     responsive: "standard",
     filter: false,
-    download: false,
+    download: true,
     print: false,
     // checkbox:true,
     selectableRows: false,
