@@ -34,17 +34,17 @@ export default function Disclaimer() {
                     <br />
                     Please carefully review the terms and conditions set forth below before using this website. By accessing, browsing, or utilizing this site and any of its pages, you acknowledge your agreement to be bound by these terms and conditions. Material available on this website may be downloaded for non-commercial, personal use only, under the condition that all copyright and proprietary notices are preserved intact. Distribution, alteration, transmission, re-utilization, reporting, or employing the site's content for public or commercial activities, including but not limited to text, images, audio, and video, is strictly prohibited without the express written consent of {bankContactInfo?.BANKname}
                     <br />
-                    Copyright (c) {bankContactInfo?.BANKname}, All Rights Reserved. The content displayed on this site, along with information submitted to the bank via this site, shall remain the exclusive property of {bankContactInfo?.BANKname}, unless specified otherwise.
+                    Copyright (c) {bankContactInfo?.BANKname}, All Rights Reserved. The content displayed on this site, along with information submitted to the Financial Services via this site, shall remain the exclusive property of {bankContactInfo?.BANKname}, unless specified otherwise.
                     <br />
                     <br />
                     <b>Trademarks</b>
                     <br />
-                    The name {bankContactInfo?.BANKname} and its logo are duly registered trademarks and service marks belonging to the bank.
+                    The name {bankContactInfo?.BANKname} and its logo are duly registered trademarks and service marks belonging to the Financial Services.
                     <br />
                     <br />
                     <b>Use of Information and Materials</b>
                     <br />
-                    The content and materials on this website are presented solely for informational purposes and should not be interpreted as an offer, solicitation, invitation, advice, or recommendation to purchase or dispose of any financial instruments or banking products offered by {bankContactInfo?.BANKname}
+                    The content and materials on this website are presented solely for informational purposes and should not be interpreted as an offer, solicitation, invitation, advice, or recommendation to purchase or dispose of any financial instruments or financial services products offered by {bankContactInfo?.BANKname}
                     <br />
                     Content and materials, along with terms, conditions, and descriptions on this website, are amendable. Not every product or service mentioned is accessible in every geographic location. Eligibility for particular products and services is contingent upon final determination and approval by {bankContactInfo?.BANKname}, and is based on the specific terms and conditions under which they are provided.
                     <br />

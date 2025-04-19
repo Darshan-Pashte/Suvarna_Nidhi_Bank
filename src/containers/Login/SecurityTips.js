@@ -25,24 +25,24 @@ export default function SecurityTips() {
                     </div>
                     <h3 align="center" className="logo1">Security Tips</h3>
                     <div className={classes.uprcontainer}>
-                        Important Security Tips For Safe Online Banking
+                        Important Security Tips For Safe Online Financial Services
                         <h6 style={{ marginTop: "12px" }}>Protect Yourself from Online Scams: </h6>
                         <ul style={{ listStyleType: "square", paddingLeft: "16px" }}>
-                            <li><b>Access directly: </b>Always type the URL of your bank's website directly into your browser's address bar.</li>
-                            <li><b>Beware of fake apps: </b>Avoid downloading malicious online banking apps from app stores. Verify their authenticity by contacting your bank. </li>
-                            <li><b>Ignore links: </b>Never click on links in emails or text messages that lead to the bank's website. </li>
+                            <li><b>Access directly: </b>Always type the URL of your financial services website directly into your browser's address bar.</li>
+                            <li><b>Beware of fake apps: </b>Avoid downloading malicious online financial services apps from app stores. Verify their authenticity by contacting your financial services. </li>
+                            <li><b>Ignore links: </b>Never click on links in emails or text messages that lead to the financial services website. </li>
                             <li><b>Don't share personal information: </b>{bankContactInfo?.name} or its representatives will never ask for your personal information, password, or one-time SMS password via email, SMS, or phone. Report any such attempts immediately. </li>
                         </ul>
                         <h6 style={{ marginTop: "12px" }}>Enhance Your Internet Security: </h6>
                         <ul><li><b>Update software: </b>Keep your operating system and web browser up-to-date with the latest security patches. </li>
                             <li><b>Enable security features: </b>Use a firewall and antivirus software with updated signatures.</li>
                             <li><b>Regular scans: </b>Scan your computer regularly for viruses and trojans. </li>
-                            <li><b>Change passwords: </b>Update your online banking password periodically. </li>
+                            <li><b>Change passwords: </b>Update your online financial services password periodically. </li>
                             <li><b>Monitor logins: </b>Check the last login date and time on your post-login page.</li>
-                            <li><b>Avoid public computers: </b>Don't use internet banking on cyber cafes or shared computers.</li>
+                            <li><b>Avoid public computers: </b>Don't use internet financial services on cyber cafes or shared computers.</li>
                             <li><b>Use a Virtual Keyboard: </b>
                                 <ul>
-                                    <li><b>Protect Against Keyloggers:</b>Use the virtual keyboard provided by your bank to enter your login credentials and other sensitive information. This helps protect against keyloggers that may capture keystrokes from your physical keyboard.</li>
+                                    <li><b>Protect Against Keyloggers:</b>Use the virtual keyboard provided by your financial services to enter your login credentials and other sensitive information. This helps protect against keyloggers that may capture keystrokes from your physical keyboard.</li>
                                     <li><b>Avoid Keyboard Shortcuts Exploits:</b>Virtual keyboards reduce the risk of malicious software exploiting keyboard shortcuts or key combinations.</li>
                                     <li><b>Secure Public or Shared Computers:</b>Using a virtual keyboard on public or shared computers adds an additional layer of security by avoiding direct keystroke entry.</li>
                                 </ul>
@@ -50,7 +50,7 @@ export default function SecurityTips() {
                         </ul>
                         <h6 style={{ marginTop: "12px" }}>Additional Tips: </h6>
                         <ul><li><b>Verify identity:</b>After logging in, you should not be asked for your username, login password, or credit/debit card details. Any such requests are likely scams.</li></ul>
-                        <p>By following these security tips, you can significantly reduce the risk of falling victim to online banking scams and protect your financial information. </p><br/>
+                        <p>By following these security tips, you can significantly reduce the risk of falling victim to online financial services scams and protect your financial information. </p><br/>
                     </div>
 
                     <input

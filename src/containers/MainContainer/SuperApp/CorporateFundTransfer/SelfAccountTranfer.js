@@ -120,8 +120,8 @@ const SelfAccountTranfer = ({ accList }) => {
   }, [watch("accountNumber")])
 
 
-  const accountListNew = user?.accountDetails && user?.accountDetails?.map(item => ({ "code": item.brCode, "value": item.virtualAccNo, 'name': item.custName, 'acctype': item.acctype }));
-  const beneAccountList = user?.accountDetails && user?.accountDetails?.map(item => ({ "code": item.brCode, "value": item.virtualAccNo, 'name': item.custName, 'acctype': item.acctype }));
+  const accountListNew = user?.accountDetails && user?.accountDetails?.map(item => ({ "code": item.brCode, "value": item.accNo, 'name': item.custName, 'acctype': item.acctype }));
+  const beneAccountList = user?.accountDetails && user?.accountDetails?.map(item => ({ "code": item.brCode, "value": item.accNo, 'name': item.custName, 'acctype': item.acctype }));
 
   console.log("accountListNew", accountListNew);
   useEffect(() => {

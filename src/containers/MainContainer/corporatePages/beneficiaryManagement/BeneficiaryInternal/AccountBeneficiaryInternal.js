@@ -349,7 +349,7 @@ const AccountBeneficiaryInternalCorporate = () => {
               <Grid item xs={12} sm={6} md={4}>
                 <div className={classes.frowdataaff}>
                   <div className={classes.frowtextaff}>
-                    Account Number
+                   Virtual Account Number
                     <sup className={classes.required}>*</sup>
                   </div>
                   <div className={classes.widthtfield}>
@@ -388,13 +388,13 @@ const AccountBeneficiaryInternalCorporate = () => {
                       defaultValue="" // Set an initial value if needed
                       rules={{
                         required:
-                          "Account Number " +
+                          "Virtual Account Number " +
                           errorMessages.error_autocomplete_message,
                         pattern: {
                           // value: /^(?!0+$)\d{9,32}$/,
                           value: /^[a-zA-Z0-9]{1,32}$/, 
                           // value: /^[a-zA-Z0-9]{1,32}$/,
-                          message: "Please Enter a valid Account Number",
+                          message: "Please Enter a valid Virtual Account Number",
                         },
                       }}
                       render={({ field, fieldState }) => {
@@ -433,7 +433,7 @@ const AccountBeneficiaryInternalCorporate = () => {
                             id="standard-adornment-password"
                             fullWidth="true"
                             disabled={validateResponseFalse ? true : false}
-                            placeholder="Account Number"
+                            placeholder="Virtual Account Number"
                             // type={showPassword ? "text" : "password"}
                             {...field} // Spread the 'field' props to bind it to the form's state
                             sx={{
