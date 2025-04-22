@@ -73,7 +73,7 @@ export default function LoginContainer() {
   useEffect(() => {
     const importedImage = async () => {
       const backgroundimage = await import(
-        `../../assets/Banks/${bankNames}/images/LoginBackgroundImage.svg`
+        `../../assets/Banks/${bankNames}/images/LoginBackgroundImage.png`
       );
       const Logo = await import(
         `../../assets/Banks/${bankNames}/images/LoginLogo.svg`

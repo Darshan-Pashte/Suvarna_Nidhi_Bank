@@ -34,7 +34,8 @@ body {
     /* Table Heaading Color */
     --common-table-heading-color: #DAE2F6;
   
-    --common-login-background-color: #C5E4FB;
+    /* --common-login-background-color: #C5E4FB; */
+    --common-login-background-color: #FFFFFF;
     --common-login-box-background-color: #FFFFFF;
   
     /* Card background */

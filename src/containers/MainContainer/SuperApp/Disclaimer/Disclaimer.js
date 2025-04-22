@@ -23,8 +23,8 @@ export default function Disclaimer() {
         <div>
             <div className={classes.mainpageTermsConditions}>
                 <div className={classes.securityTips}>
-                <div className={classes.imagesbhagini}>
-                    {/* <img src={ProfileIcon} alt='' style={{display:'flex', justifyContent:'center'}}/> */}
+                    <div className={classes.imagesbhagini}>
+                        {/* <img src={ProfileIcon} alt='' style={{display:'flex', justifyContent:'center'}}/> */}
                     </div>
                     <h3 align="center" className="logo1">Disclaimer</h3>
                     <b>Legal Notice and Disclaimer for {bankContactInfo?.BANKname}</b>
@@ -32,48 +32,77 @@ export default function Disclaimer() {
                     <br />
                     <b>Legal Notice</b>
                     <br />
-                    Please carefully review the terms and conditions set forth below before using this website. By accessing, browsing, or utilizing this site and any of its pages, you acknowledge your agreement to be bound by these terms and conditions. Material available on this website may be downloaded for non-commercial, personal use only, under the condition that all copyright and proprietary notices are preserved intact. Distribution, alteration, transmission, re-utilization, reporting, or employing the site's content for public or commercial activities, including but not limited to text, images, audio, and video, is strictly prohibited without the express written consent of {bankContactInfo?.BANKname}
+                    Please read this legal notice carefully before using this website. By accessing and using any part of this site, you agree to the terms and conditions set forth herein. Content from this site may be downloaded only for personal, non-commercial use, provided that all copyright and proprietary notices remain intact. Any modification, republication, transmission, or commercial exploitation of the website content—including but not limited to text, visuals, graphics, and multimedia elements—without written permission from {bankContactInfo?.BANKname} is strictly prohibited.
                     <br />
-                    Copyright (c) {bankContactInfo?.BANKname}, All Rights Reserved. The content displayed on this site, along with information submitted to the Financial Services via this site, shall remain the exclusive property of {bankContactInfo?.BANKname}, unless specified otherwise.
+                    All content and material available on this site are the intellectual property of Suvarna Laxmi Nidhi Limited, unless stated otherwise, and are protected under applicable intellectual property laws.
                     <br />
                     <br />
                     <b>Trademarks</b>
                     <br />
-                    The name {bankContactInfo?.BANKname} and its logo are duly registered trademarks and service marks belonging to the Financial Services.
+                    The name {bankContactInfo?.BANKname} and its associated logo are registered trademarks of the Company. Unauthorized use or reproduction of any trademarks or service marks on this website is strictly forbidden.
                     <br />
                     <br />
                     <b>Use of Information and Materials</b>
                     <br />
-                    The content and materials on this website are presented solely for informational purposes and should not be interpreted as an offer, solicitation, invitation, advice, or recommendation to purchase or dispose of any financial instruments or financial services products offered by {bankContactInfo?.BANKname}
+                    The information presented on this website is intended for general understanding and awareness. It should not be construed as an offer, solicitation, or invitation to engage in any financial product or service. The availability of specific financial services is subject to regulatory guidelines and final approval by {bankContactInfo?.BANKname} Service terms, eligibility, and conditions are subject to change and may vary based on location, regulatory compliance, and user profile.
                     <br />
-                    Content and materials, along with terms, conditions, and descriptions on this website, are amendable. Not every product or service mentioned is accessible in every geographic location. Eligibility for particular products and services is contingent upon final determination and approval by {bankContactInfo?.BANKname}, and is based on the specific terms and conditions under which they are provided.
-                    <br />
+
                     <br />
                     <b>Disclaimer</b>
                     <br />
-                    Materials and information presented on this website are intended for general informational purposes only and should not serve as a foundation for making business or financial decisions.
+                    The content on this website is provided on an “as is” and “as available” basis. While we strive for accuracy,{bankContactInfo?.BANKname} does not make any warranties, either express or implied, about the completeness, reliability, or timeliness of any information provided herein. Users are strongly encouraged to seek professional advice before making financial or business decisions based on the information provided.
                     <br />
-                    Advice or information obtained via this website should not be acted upon without seeking more accurate, up-to-date sources of information or specific professional guidance. We strongly advise obtaining such professional counsel when necessary.
+                    {bankContactInfo?.BANKname} disclaims all liability for any direct, indirect, incidental, or consequential loss or damage arising from the use or inability to use this website, including any inaccuracies, errors, omissions, or service interruptions. The Company is not liable for any damage resulting from internet security risks, such as viruses, unauthorized access, or loss of data.
                     <br />
-                    Content and materials on this site are offered "as is" and "as available," with efforts made to maintain accuracy and correctness. However, {bankContactInfo?.BANKname} does not guarantee the continuity or currency of information at the time it is accessed by users.
+                    We do not guarantee that communication sent via this website will be received, or that it will remain confidential and secure during internet transmission. You are responsible for ensuring that any electronic communication is properly secured.
                     <br />
-                    {bankContactInfo?.BANKname} disclaims all liability for any direct or indirect loss or damage (including, but not limited to, special, incidental, or consequential loss or damage) arising from the use of this website, including any losses, damages, or expenses stemming from, but not limited to, defects, errors, imperfections, faults, mistakes, or inaccuracies in this website, its contents, or associated services, or due to the unavailability of the website or any part thereof or any contents or associated services.
                     <br />
-                    {bankContactInfo?.BANKname} does not assure the receipt of emails sent from the website nor guarantees the privacy and/or security of emails during internet transmission.
+                    <b>Use of Information and Materials</b>
+                    <br />
+                    The information presented on this website is intended for general understanding and awareness. It should not be construed as an offer, solicitation, or invitation to engage in any financial product or service. The availability of specific financial services is subject to regulatory guidelines and final approval by {bankContactInfo?.BANKname} Service terms, eligibility, and conditions are subject to change and may vary based on location, regulatory compliance, and user profile.
+                    <br />
+
+                    <br />
+                    <b>Data Privacy and Security</b>
+                    <br />
+                    By using this website, you agree to the collection and use of information as outlined in our Privacy Policy. The Company employs strict security measures to protect user data and comply with data protection guidelines issued by the Ministry of Corporate Affairs and the NIDHI Rules under the guidelines of the Reserve Bank of India.
+                    <br />
+                    <br />
+
+                    <b>External Links</b>
+                    <br />
+                    This site may include hyperlinks to third-party websites. {bankContactInfo?.BANKname} does not control or endorse these external sites and is not responsible for their content, privacy practices, or terms of use. Users are encouraged to review the policies of such sites before sharing personal or financial information.
+                    <br />
+                    <br />
+
+                    <b>Amendments</b>
+                    <br />
+                    {bankContactInfo?.BANKname} reserves the right to update or modify this legal notice and disclaimer without prior notice. Continued use of the website constitutes acceptance of any revisions made.
+                    <br />
+                    <br />
+
+                    <b>Contact Information</b>
+                    <br />
+                    <ul>
+                        <li>Email: support@suvarnalaxmi.com </li>
+                        <li>Phone: +18002684333</li>
+                        <li>Registered Office: Sr. No. 106-3A, Near Hotel Sahara, S. B. Road, Shivaji Nagar, Pune 411016</li>
+                        <li>Website: www.suvarnalaxmi.com</li>
+                    </ul>
                     <br />
                     <br />
 
                     <input
-                            type="button"
-                            name="submit"
-                            className="btn btn-info btn-md orangeBtn"
-                            value="close"
-                            onClick={goToLink}
-                            style={{ backgroundColor: 'var(--button-color)', color: 'white',width: '10vw',fontSize:'20px',fontWeight:'500' }}
-                        />
+                        type="button"
+                        name="submit"
+                        className="btn btn-info btn-md orangeBtn"
+                        value="close"
+                        onClick={goToLink}
+                        style={{ backgroundColor: 'var(--button-color)', color: 'white', width: '10vw', fontSize: '20px', fontWeight: '500' }}
+                    />
                 </div>
             </div>
         </div>
     );
-    
+
 }

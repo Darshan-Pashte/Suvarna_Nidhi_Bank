@@ -83,12 +83,12 @@
   padding: 7px 15px  !important;
   font-size: 12px;
   
-  /* background:linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); */
+  background:#000;
   /* background: linear-gradient(to right, #30CFD0 0%, #330867 100%); */
  
 }
 .bottominfo, .bottominfo2{
-  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  background: linear-gradient(90deg, #CE6F1D 0%, #FFF 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
