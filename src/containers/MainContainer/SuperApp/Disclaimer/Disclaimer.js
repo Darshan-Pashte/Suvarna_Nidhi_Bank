@@ -6,6 +6,12 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import classes from "../../../../containers/Login/Login.module.css";
 import { useNavigate } from 'react-router-dom';
+
+import EMAIL from "../../../../assets/Banks/Suvarna/images/Mail.svg";
+import ADRRESS from "../../../../assets/Banks/Suvarna/images/Registered office.svg";
+import PHONE from "../../../../assets/Banks/Suvarna/images/Phone.svg";
+import WEBSITE from "../../../../assets/Banks/Suvarna/images/Website.svg";
+
 // import ProfileIcon from '../../../../assets/Banks/Bhagini/images/BhagniLogoAndName 1.jpg';
 export default function Disclaimer() {
     // const { banklink, displayBankLink, npci, displayNpciLink, rbi, displayRbiLink , bankAddress } = useContext(DataContext);
@@ -84,10 +90,10 @@ export default function Disclaimer() {
                     <b>Contact Information</b>
                     <br />
                     <ul>
-                        <li>Email: support@suvarnalaxmi.com </li>
-                        <li>Phone: +18002684333</li>
-                        <li>Registered Office: Sr. No. 106-3A, Near Hotel Sahara, S. B. Road, Shivaji Nagar, Pune 411016</li>
-                        <li>Website: www.suvarnalaxmi.com</li>
+                        <li><img src={EMAIL} alt="email" /> Email: <a href="mailto:legal@suvarnalaxmi.com" >legal@suvarnalaxmi.com </a></li>
+                        <li> <img src={PHONE} alt="email" /> Phone: +18002684333</li>
+                        <li> <img src={ADRRESS} alt="email" /> Registered Office: Sr. No. 106-3A, Near Hotel Sahara, S. B. Road, Shivaji Nagar, Pune 411016</li>
+                        <li> <img src={WEBSITE} alt="email" /> Website: <a href='https://www.suvarnalaxmi.com' target='_blank'>www.suvarnalaxmi.com </a></li>
                     </ul>
                     <br />
                     <br />

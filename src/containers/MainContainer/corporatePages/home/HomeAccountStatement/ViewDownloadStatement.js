@@ -428,7 +428,7 @@ const CorViewDownloadStatement = () => {
       },
     },
     {
-      name: "virtualAccno",
+      name: "accNo",
       label: "Account Number",
       options: {
         filter: true,
