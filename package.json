@@ -1,6 +1,6 @@
 {
   "name": "swift-corepe-admin",
-  "version": "0.3.232",
+  "version": "0.3.233",
   "private": true,
   "homepage": "/onlinebankingpublic",
   "dependencies": {
