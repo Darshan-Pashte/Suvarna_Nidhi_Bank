@@ -2,7 +2,7 @@
   "name": "swift-corepe-admin",
   "version": "0.3.234",
   "private": true,
-  "homepage": "/onlinebankingprivate",
+  "homepage": "/slnblmerchantpublic",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -115,8 +115,8 @@
     "predeploy:bhagini": "npm version patch && yarn update-readme && yarn run build:bhagini && yarn copy && yarn paste && yarn cut && yarn copyversion && yarn rename && yarn zip",
     "predeploy:samata": "npm version patch && yarn update-readme && yarn run build:samata && yarn copy && yarn paste && yarn cut && yarn copyversion && yarn rename && yarn zip",
     "predeploy:suvarna": "npm version patch && yarn update-readme && yarn run build:suvarna && yarn copy && yarn paste && yarn cut && yarn copyversion && yarn rename && yarn zip",
-    "rename": "rename build onlinebankingprivate",
-    "zip": "powershell Compress-Archive onlinebankingprivate onlinebankingprivate.zip",
+    "rename": "rename build slnblmerchantpublic",
+    "zip": "powershell Compress-Archive slnblmerchantpublic slnblmerchantpublic.zip",
     "update-readme": "node update-readme.js"
   },
   "eslintConfig": {
