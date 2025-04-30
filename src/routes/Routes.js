@@ -151,6 +151,7 @@ import AuthBeneficiarySuccessfull from "../containers/MainContainer/corporatePag
 import Receipt from "../containers/MainContainer/SuperApp/AccountLimit/NEFT/Receipt";
 import TransactionBrowse from "../containers/MainContainer/SuperApp/AccountLimit/Transaction/TransactionBrowse";
 import TransactionReceipt from "../containers/MainContainer/SuperApp/AccountLimit/Transaction/Receipt/TransactionReceipt";
+import IMPSDetails from "../containers/MainContainer/SuperApp/AccountLimit/IMPS/IMPSDetails";
 
 const Routes = () => {
   const { loading, error, isAuthenticated, user, menu, userRole } = useSelector(
@@ -698,15 +699,15 @@ const Routes = () => {
       roles: [],
       Icon: FundTranfer,
       childRoutes: [
-        // {
-        //   name: "IMPS",
-        //   id: "imps",
-        //   url: array[0] == "1" ? "/imps" : null,
-        //   roles: [],
-        //   arr: array[0],
-        //   component: <AccountLimitIMPS />,
-        //   Icon: FundTranfer,
-        // },
+        {
+          name: "IMPS",
+          id: "imps",
+          url: array[28] == "1" ? "/imps" : null,
+          roles: [],
+          arr: array[28],
+          component: <AccountLimitIMPS />,
+          Icon: FundTranfer,
+        },
         {
           name: "NEFT",
           id: "neft",
@@ -759,6 +760,14 @@ const Routes = () => {
         //   component: <BeneficiaryDetails />,
         //   Icon: FundTranfer,
         // },
+        {
+          name: "IMPS Details",
+          id: "impsdetails",
+          url: array[28] == "1" ? "/impsdetails" : null,
+          roles: [],
+          component: <IMPSDetails />,
+          Icon: FundTranfer,
+        },
         {
           name: "Neft Details",
           id: "neftdetails",

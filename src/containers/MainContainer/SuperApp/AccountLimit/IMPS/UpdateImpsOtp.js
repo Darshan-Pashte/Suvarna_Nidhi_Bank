@@ -12,7 +12,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import IconButton from '@mui/material/IconButton';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { postApiData } from '../../../../../components/utilities/nodeApiServices';
 import { apiList } from '../../../../../components/utilities/nodeApiList';
 import { errorMessages } from '../../../../../components/utilities/formValidation';
@@ -21,8 +21,8 @@ import { useState } from 'react';
 import { LoadingButton } from '@mui/lab';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import TimerComponent from '../../../../../components/common/TimerComponent';
-
-
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from "react";
 const style = {
     position: 'absolute',
     top: '50%',
@@ -38,7 +38,7 @@ const style = {
     gap: "30px"
 };
 
-const ColorButton = styled(LoadingButton)(({ theme }) => ({
+const ColorButton = styled(Button)(({ theme }) => ({
     color: "#FFFFFF",
     // backgroundColor: "#F84B67",
     backgroundColor: "#323232",
@@ -55,13 +55,14 @@ const ColorButton = styled(LoadingButton)(({ theme }) => ({
 }));
 
 const defaultFormData = {
-    username: "",
-    password: "",
-    cpassword: ""
-}
+    accNo: "",
+    amount: "",
+    tpin: "",
+    remark: "",
+};
 
 
-export default function UpdateImpsOTP({ open, handleOpen, handleClose, userId, payloads , response}) {
+export default function UpdateImpsOtp({ open, handleOpen, handleClose, userId, payloads, response , selectedAccountName }) {
     const {
         control,
         handleSubmit,
@@ -75,38 +76,42 @@ export default function UpdateImpsOTP({ open, handleOpen, handleClose, userId, p
         defaultValues: defaultFormData,
         mode: "onChange",
     });
-
+    const { loading, error, isAuthenticated, user } = useSelector(
+        (state) => state.auth
+    );
     React.useEffect(() => {
         setValue("username", userId)
         // setLastLogin(sessionStorage.getItem("lastLogin"))
     }, []);
+    const navigate = useNavigate();
+    //   const handlleNavigate = (route,state,state1) => {
+    //     navigate(route,{state:{state:state,state1:state1}});
+    //   };
+
+    const handlleNavigate = (route, state) => {
+        navigate(route, { state: state }); // Directly pass state containing `data` and `response`
+    };
 
     const [showPassword, setShowPassword] = React.useState(false);
     const [otp, setOtp] = useState('');
     const [isLoading, setIsloading] = useState(false);
 
+    const [tries, setTries] = useState("");
+    const [msg, setMsg] = useState("");
+    const [showmsg, seShowtMsg] = useState(false);
+    // const [selectedAccountName, setSelectedAccountName] = useState("");
+console.log("selected account name ", selectedAccountName)
+
     const [loadings, setloading] = useState(false);
     const handleClickShowPassword = () => setShowPassword((show) => !show);
     const dispatch = useDispatch();
 
-
     const [isOtpEntered, setIsOtpEntered] = useState(false);
+
 
     const handleMouseDownPassword = (event) => {
         event.preventDefault();
     };
-
-    const [tries, setTries] = useState("");
-    const [msg, setMsg] = useState("");
-    const [showmsg, seShowtMsg] = useState(false);
-	
-	 const handleFocus = () => {
-        // Clear the input value on focus
-        setOtp('');
-        setIsOtpEntered(false)
-
-      };
-
 
     const popupAlert = (message, msgtype, msgicon) => {
         {
@@ -118,6 +123,15 @@ export default function UpdateImpsOTP({ open, handleOpen, handleClose, userId, p
         }
     };
 
+    const handleFocus = () => {
+        // Clear the input value on focus
+        setOtp('');
+        setIsOtpEntered(false)
+
+    };
+
+
+
     // const [userName, setUserName] = React.useState("");
 
     // React.useEffect(() => {
@@ -125,8 +139,79 @@ export default function UpdateImpsOTP({ open, handleOpen, handleClose, userId, p
     // }, []);
     // console.log("payloads", payloads);
 
+    const accountList =
+        user?.accountDetails &&
+        user?.accountDetails?.map((item) => ({
+            code: item.brCode,
+            value: item.accNo,
+            name: item.name,
+            acctype: item.acctype,
+        }));
 
 
+    React.useEffect(() => {
+        const accNo = watch("accNo");
+        if (accNo) {
+            const account = accountList.find(
+                (acc) => acc.value === watch("accNo").value
+            );
+            if (account) {
+                console.log("Set value run");
+                setValue("acctype", account.acctype);
+                setValue("accName", account.name);
+            }
+        }
+    }, [watch("accNo"), accountList]);
+
+    console.log("accountList", accountList)
+    // const onSubmits = async (data) => {
+    //     const payload = {
+    //         amount: payloads?.amount,
+    //         tpin: payloads?.tpin,
+    //         custNo: payloads?.custNo,
+    //         sessionId: payloads?.sessionId,
+    //         accNo: payloads?.accNo,
+    //         beneNickname: payloads?.beneNickname,
+    //         beneAccNo: payloads?.beneAccNo,
+    //         beneIfsc: payloads?.beneIfsc,
+    //         remark: payloads?.remark,
+    //         rrno: userId?.rrn,
+    //         strotp: otp
+    //     }
+    //     setIsloading(true);
+    //     const response = await postApiData(apiList.NEFTTRANSACTIONS, payload)
+    //     if (response.status == true) {
+    //         setIsloading(false);
+    //         handleClose();
+    //         // popupAlert(response.message, "Success", "success");
+    //         // handlleNavigate('/fundtransfer/receipt' ,payloads, response)
+    //         handlleNavigate('/fundtransfer/receipt', { data, response, accountList, accountHolderName: selectedAccountName });
+    //     }
+    //     else if (response.status == false) {
+    //         if (response?.respCode == "OE") {
+    //             popupAlert(response.message, "Error", "error");
+    //             setIsloading(false)
+    //             handleClose();
+    //             handleFocus();
+    //             // handleFalse();
+    //             reset();
+    //             // window.location.reload();
+    //         }
+
+    //         else {
+    //             setIsloading(false)
+    //             // handleClose();
+    //             handleFocus();
+    //             //  popupAlert(response.message, "Error", "error")
+    //             // seShowtMsg(true)
+    //             handlleNavigate('/fundtransfer/receipt', { data, response, accountList, accountHolderName: selectedAccountName });
+    //             // setMsg(response.message)
+    //             setTries(response?.data?.otpAttempt + 1);
+    //         }
+    //         reset();
+
+    //     }
+    // };
     const onSubmits = async (data) => {
         const payload = {
             amount: payloads?.amount,
@@ -139,45 +224,82 @@ export default function UpdateImpsOTP({ open, handleOpen, handleClose, userId, p
             beneIfsc: payloads?.beneIfsc,
             remark: payloads?.remark,
             rrno: userId?.rrn,
-            beneName:payloads?.beneName,
             strotp: otp
         }
         setIsloading(true);
         const response = await postApiData(apiList.IMPSTRANSACTIONS, payload)
-
-        if (response?.status == true) {
+        if (response.status == true) {
             setIsloading(false);
             handleClose();
             popupAlert(response.message, "Success", "success");
-        }  else if(response.status == false){
-            if(response?.respCode == "OE"){
+            reset();
+        }
+        else if (response.status == false) {
+            if (response?.respCode == "OE") {
                 popupAlert(response.message, "Error", "error");
                 setIsloading(false)
-                 handleClose();
+                handleClose();
                 handleFocus();
                 // handleFalse();
                 reset();
                 // window.location.reload();
-              }
-               
-        else {
-            setIsloading(false)
+            }
+ 
+            else {
+                setIsloading(false)
                 // handleClose();
                 handleFocus();
-            //  popupAlert(response.message, "Error", "error")
-            seShowtMsg(true)
-            setMsg(response.message)
-                setTries(response?.data?.otpAttempt + 1);}
-                reset();    
-             
+                //  popupAlert(response.message, "Error", "error")
+                seShowtMsg(true)
+                setMsg(response.message)
+                setTries(response?.data?.otpAttempt + 1);
+            }
+            reset();
+ 
         }
-        
     };
-
 
     return (
         <div>
-          
+
+            {/* <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+
+            >
+                <Box sx={style} component={"form"} onSubmit={handleSubmit(onSubmits)} className={classes.mainbox} >
+                    <div className={classes.updatepass}>Please Enter OTP</div>
+                    <OTPInput
+                        value={otp}
+                        onChange={setOtp}
+                        numInputs={4}
+                        renderSeparator={<span>-</span>}
+                        renderInput={(props) => <input {...props} />}
+                        inputType="password"
+                        inputStyle={{
+                            width: "70px",
+                            marginBottom: "10px",
+                            marginTop: '10px',
+                            height: "70px",
+                            fontSize: '20px',
+                            borderRadius: '5px',
+                            borderColor: 'internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133))'
+                        }}
+
+                        containerStyle={{
+                            display: 'flex',
+                            justifyContent: 'space-between'
+
+                        }}
+                    />
+                    <ColorButton variant="contained" type="submit">
+                        Submit
+                    </ColorButton>
+                </Box>
+
+            </Modal> */}
             <Modal
                 open={open}
                 // onClose={handleClose}
@@ -189,7 +311,7 @@ export default function UpdateImpsOTP({ open, handleOpen, handleClose, userId, p
                     <div className={classes.otpContent}>
                         <div className={classes.otpheading}>OTP Verification</div>
                         <div className={classes.cancelButton}>
-                            <IconButton aria-label="delete"  onClick={handleClose}>
+                            <IconButton aria-label="delete" onClick={handleClose}>
                                 <HighlightOffIcon />
                             </IconButton>
                         </div>
@@ -197,16 +319,18 @@ export default function UpdateImpsOTP({ open, handleOpen, handleClose, userId, p
                     <div>
                         Enter the verification code we just sent to your number.
                     </div>
-                    {!otp && <div style={{color:'red',marginBottom:'-10px'}}>{msg}</div>}
+                    {!otp && <div style={{ color: 'red', marginBottom: '-10px' }}>{msg}</div>}
+
                     <OTPInput
                         value={otp}
                         // onChange={setOtp}
 
+
                         onChange={(otpValue) => {
-                            const otpVal= otpValue.replace(/\D/g, ''); // Remove non-numeric characters
+                            const otpVal = otpValue.replace(/\D/g, ''); // Remove non-numeric characters
                             setOtp(otpVal)
                             setIsOtpEntered(otpVal.length > 3);
-                          }}
+                        }}
                         numInputs={4}
                         // renderSeparator={<span>-</span>}
                         renderInput={(props) => <input {...props} />}
@@ -227,12 +351,12 @@ export default function UpdateImpsOTP({ open, handleOpen, handleClose, userId, p
 
                         }}
                     />
-                       <TimerComponent
-            Case="Minutes"
-            setOtp={handleClose}
-            Time={response?.otpTime}
-          />
-                    {tries ?  <div style={{color:'red',marginTop:'-10px'}}>You have {tries} attempt left</div> : null}
+                    <TimerComponent
+                        Case="Minutes"
+                        setOtp={handleClose}
+                        Time={response?.otpTime}
+                    />
+                    {tries ? <div style={{ color: 'red', marginTop: '-10px' }}>You have {tries} attempt left</div> : null}
                     <div className={classes.button}>
                         <LoadingButton
                             variant="contained"
@@ -243,7 +367,7 @@ export default function UpdateImpsOTP({ open, handleOpen, handleClose, userId, p
                                 color: "#FFFFFF",
                                 // backgroundColor: "#F84B67",
                                 // backgroundColor: "#323232",
-                                backgroundColor: "var( --button-color)",
+                                backgroundColor: "#183883",
                                 border: "1px solid #CCC",
                                 borderRadius: "8px",
                                 paddingLeft: "15px",
@@ -251,7 +375,7 @@ export default function UpdateImpsOTP({ open, handleOpen, handleClose, userId, p
                                 width: "183px",
                                 height: "40px",
                                 "&:hover": {
-                                    background: "var(  --button-hover-color)",
+                                    background: "#808080",
                                     color: "white",
                                 },
                             }}

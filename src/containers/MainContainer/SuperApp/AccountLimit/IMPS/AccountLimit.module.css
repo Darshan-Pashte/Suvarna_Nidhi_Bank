@@ -1,114 +1,148 @@
-.mainpagePayment {
+.mainpagePayment{
     /* width: 84vw; */
-    margin: 1rem;
-}
-
-.Payment1MobilePrepaidMainPage {
     /* margin: 1rem; */
 }
 
-.accountlimitimpxheading {
+.Payment1MobilePrepaidMainPage{
+    /* margin: 1rem; */
+}
+.beneficiarytitle{
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: normal
+}
+.headingRemitter{
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: normal
+}
+.headingRemitterss{
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: normal;
+    padding-top: 5px;
+}
+.frowtextaff{
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 0.8rem;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: normal
+}
+.accountlimitimpxheading{
     /* color: #183883; */
-    color: var(--main-heading-color);
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
+    color: var( --main-heading-color);
+
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/* margin-bottom: 10px; */
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
-.box1 {
-    margin-top: 10px;
-}
 
-.impsmidcontainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 6px;
-    background: #FFF;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
-}
 
-.accountlimithead1 {
+.impsmidcontainer{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ padding: 20px;
+ border-radius: 6px;
+background: #FFF;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.accountlimithead1{
     color: #183883;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    /* line-height: 0px; */
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+/* line-height: 0px; */
 }
 
-.accountlimithead2 {
+.accountlimithead2{
     color: #000;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 10px;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 10px;
 }
 
 
-.tableMainBox {
-    border-radius: 8px !important;
-    background: #FFF !important;
-    box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important;
 
-}
-
-.tableMainBoxInner {
-    border-radius: 0px 0px 8px 8px !important;
-    background: #FFF !important;
-    box-shadow: 4px 4px 6px 4px rgba(66, 66, 66, 0.15) !important;
-    padding: 24px;
-}
-
-
-.mainpageBox {
+.mainpageBox{
     /* margin: 1rem; */
     /* padding: 30px; */
     border-radius: 8px !important;
-    /* background: #FFF !important;
+/* background: #FFF !important;
 box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ; */
 }
 
-.impsnote {
-    color: #323232;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+.tableMainBox{
+    border-radius: 8px !important;
+background: #FFF !important;
+box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ;
+
+}
+.tableMainBoxInner{
+    border-radius: 8px !important;
+background: #FFF !important;
+box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ;
+padding: 24px;
 }
 
+
+.impsnote{
+    color: #323232;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
 /* Policies */
 
-.policiesheader {
+.policiesheader{
     margin-bottom: 20px;
     color: #183883;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
-.required {
+.required{
     color: #ED1C24;
     leading-trim: both;
     text-edge: cap;
@@ -118,167 +152,108 @@ box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ; */
     font-weight: 400;
     line-height: normal;
 }
-
-.policiescheckbox>span {
+.policiescheckbox > span{
     cursor: pointer;
     color: #183883;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration-line: underline;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: underline;
 }
 
 
 /* IMPS */
 
-.mainpageImps {
+.mainpageImps{
     margin: 1.4rem;
 }
 
-.accountlimtImpsupper {
-    margin: 1% 0 1% 0;
+.accountlimtImpsupper{
+    margin: 4% 0 8% 0;
 }
 
-.accountlimitrightside {
+.accountlimitrightside{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.accountlimitaccinfo {
+.accountlimitaccinfo{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
 }
 
-.Impsuppertext {
-    color: #323232;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 1.1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 30px;
+
+.beneficiarymaintitle{
+    color: #AD2120;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 1.1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
-.Impslowertext {
+
+.Impsuppertext{
+    color: #323232;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 30px;
+}
+.Impslowertext{
     display: flex;
     justify-content: space-between;
     color: #323232;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
 }
 
-.payment1mobileprepaidbutton {
+.payment1mobileprepaidbutton{
     display: flex;
     gap: 20px;
 }
-
-.acclimitmainheading {
-    color: #323232;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 20px;
-}
-
-.acclimitheading {
-    color: #323232;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 10px 0px 0px 0px;
-
-}
-
-.acclimitheadingneft {
-    color: #323232;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 40px 0px 0px 0px;
-
-}
-
-.Impslowerlefttext {
-    color: #323232;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-}
-
-.Impslowerrighttext {
-    color: #323232;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
+.buttonApply{
+    margin-top: 18px;
 }
 
 /* IMPS Card */
 
-.beneficiarymaintitle {
+.beneficiarytitle{
     color: #323232;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
-
-.beneficiarytitle {
-    color: #323232;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.beneficiarycard {
+.beneficiarycard{
     border-radius: 6px;
-    background: #FFF;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
-    padding: 10px;
-    cursor: pointer;
+background: #FFF;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+padding: 10px;
+cursor: pointer;    
 }
 
-.beneficiarycardtitle {
+.beneficiarycardtitle{
     color: #323232;
     leading-trim: both;
     text-edge: cap;
@@ -291,113 +266,156 @@ box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ; */
 
 /* Beneficiary */
 
-.uppercontainerheading {
+.uppercontainerheading{
     color: #183883;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
 
-.uppercontainercontent {
+.uppercontainercontent{
     display: flex;
     gap: 4%;
 }
 
 
-.uppercontainerleftcontent {
+.uppercontainerleftcontent{
     width: 48%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     border-radius: 6px;
-    background: #FFF;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
-    margin: 20px 0;
+background: #FFF;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+margin: 20px 0;
 }
 
-.uppercontainerleftcontenttop {
+.uppercontainerleftcontenttop{
     display: flex;
     justify-content: space-between;
 }
 
-.leftcontenttopleft {
+.leftcontenttopleft{
     color: #183883;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
-
-.uppercontainerrightcontent {
+.uppercontainerrightcontent{
     display: flex;
     border-radius: 6px;
-    background: #FFF;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+background: #FFF;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
 
 }
 
-.uppercontainerleftcontentmiddle {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20px;
-
+.uppercontainerleftcontentmiddle{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+   justify-content: flex-start;
+   align-items: center;
+   margin-top: 20px;
+   
 }
 
-.uppercontainerleftcontentmiddlecontainer {
+.uppercontainerleftcontentmiddlecontainer{
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
     flex-wrap: wrap;
     /* width: 100%; */
-    /* width: 40%; */
-    gap: 5px;
-
+  /* width: 40%; */
+    gap:5px;
+    
 }
 
-.middlecontainertitle {
+.middlecontainertitle{
     color: #323232;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
-.middlecontainerinfo {
+.middlecontainerinfo{
     color: #707070;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
-.uppercontainerrightcontent {
+.uppercontainerrightcontent{
     width: 48%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     border-radius: 6px;
-    background: #FFF;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
-    margin: 20px 0;
+background: #FFF;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+margin: 20px 0;
 }
 
-.redrow{
+.availablebalance{
+    text-align: end;
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+.balace {
+    color: var(--primary-color);
+}
+.sbox{
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    height: fit-content;
+}
+.sboxloan{
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    height: fit-content;
+}
+  
+  .redrow{
+    /* background: rgb(83 177 233 / 93%); */
+    background: var(--primary-color);
+    margin: 0%;
+    border-radius: 8px 8px 0px 0px;
+    padding: 0.4rem; 
+    color: var();
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:6vh;
+}
+.redrows{
     /* background: rgb(83 177 233 / 93%); */
     background: var(--primary-color);
     margin: 0%;
@@ -420,51 +438,46 @@ box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ; */
     font-weight: 500;
     line-height: normal;
 }
-.sbox{
-    background-color: #fff;
-    border-radius: 0px 0px 8px 8px;
-    box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 80vh;
-    padding: 15px;
-    height: fit-content;
-}
+.autocomplete-textfield {
+    width: 18vw;
+  }
+  .tabrow{
+     display: flex; gap: 5px;
+     align-items: center;
+    
+  }
 
 @media screen and (max-width:568px) {
-
-    .redrow {
+    
+    .redrow{
         /* background: rgb(83 177 233 / 93%); */
         background: var(--primary-color);
         margin: 0%;
         border-radius: 0px 0px 0px 0px;
-        padding: 0.8rem;
+        padding: 0.8rem; 
         color: var();
         font-weight: 600;
         display: flex;
         flex-direction: column !important;
         justify-content: space-between;
         align-items: flex-start;
-        height: 7vh;
+        height:7vh;
     }
-    .redrows {
+    .redrows{
         /* background: rgb(83 177 233 / 93%); */
         background: var(--primary-color);
         margin: 0%;
         border-radius: 0px 0px 0px 0px;
-        padding: 0.8rem;
+        padding: 0.8rem; 
         color: var();
         font-weight: 600;
         display: flex;
         flex-direction: column !important;
         justify-content: space-between;
         align-items: flex-start;
-        height: 14vh;
+        height:7vh;
     }
-
-
-    .SubHeading {
+    .SubHeading{
         color: var(--color-N10, #ffffff);
         leading-trim: both;
         text-edge: cap;
@@ -474,35 +487,58 @@ box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ; */
         font-weight: 500;
         line-height: normal;
     }
-
-    .sbox {
+    
+    .sbox{
         background-color: #EDEDED;
         border-radius: 0px 0px 0px 0px;
         box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 0px 0px 0px 0px;
+        padding: 0px 10px 10px 10px;
         height: fit-content;
     }
-    .tableMainBoxInner {
-        border-radius: 0px 0px 8px 8px !important;
-        background: #FFF !important;
-        box-shadow: 4px 4px 6px 4px rgba(66, 66, 66, 0.15) !important;
-        padding: 10px;
-    }
-    
-    .tabAutocomplete {
+    .sboxloan{
+        background-color: #EDEDED;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0 0 0 0 #fff, .3em .3em 1em #0000004d;
         display: flex;
-        gap: 5px;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        height: fit-content;
+    }
+    .tabAutocomplete{
+        display: flex; gap: 5px;
         align-items: center;
         width: 100% !important;
         justify-content: center;
-    }
-
+     }
     .completeForm {
         width: 100%;
+      }
+
+      .headingRemitterss{
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        /* font-weight: 500; */
+        line-height: normal;
+        padding-top: 7px;
+    }
+    .buttonApply{
+        margin-top: 0px !important;
     }
 
-
 }
+
+.completeForm{
+    width: 72%;
+}
+.tabAutocomplete{
+    display: flex; gap: 5px;
+    align-items: center;
+    width: 34%;
+ }
