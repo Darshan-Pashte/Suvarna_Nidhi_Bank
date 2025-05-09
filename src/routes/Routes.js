@@ -152,6 +152,8 @@ import Receipt from "../containers/MainContainer/SuperApp/AccountLimit/NEFT/Rece
 import TransactionBrowse from "../containers/MainContainer/SuperApp/AccountLimit/Transaction/TransactionBrowse";
 import TransactionReceipt from "../containers/MainContainer/SuperApp/AccountLimit/Transaction/Receipt/TransactionReceipt";
 import IMPSDetails from "../containers/MainContainer/SuperApp/AccountLimit/IMPS/IMPSDetails";
+import GenerateQRCode from "../containers/MainContainer/SuperApp/GenerateQRCode/GenerateQRCode";
+import GenerateQRCodeCorporate from "../containers/MainContainer/SuperApp/GenerateQRCode/GenerateQRCodeCorporate";
 
 const Routes = () => {
   const { loading, error, isAuthenticated, user, menu, userRole } = useSelector(
@@ -1745,6 +1747,15 @@ const Routes = () => {
         },
       ]
     },
+    {
+      name: "Generate QR Code",
+      id: "qrcode",
+      url: array[0] == "1" ? "/qrcode" : null,
+      component: <GenerateQRCode />,
+      roles: ["all"],
+      arr: array[0],
+      Icon: QRsvg,
+    },
 
     //CORPORATE SETTINGS
     {
@@ -1765,6 +1776,15 @@ const Routes = () => {
       component: <UserMaster />,
       roles: [],
       Icon: SettingIcon,
+    },
+    {
+      name: "Generate QR Code",
+      id: "qrcode",
+      url: array[101] || array[201] || array[251] == "1" ? "/qrcode" : null,
+      component: <GenerateQRCodeCorporate />,
+      roles: ["all"],
+      arr: array[101] || array[201] || array[251],
+      Icon: QRsvg,
     },
 
     //CORPORATE CHECKER SETTINGS

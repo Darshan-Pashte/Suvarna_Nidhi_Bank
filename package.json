@@ -2,7 +2,7 @@
   "name": "swift-corepe-admin",
   "version": "0.3.238",
   "private": true,
-  "homepage": "/slnblmerchantpublic",
+  "homepage": "/slnbl",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -57,6 +57,7 @@
     "react-otp-input": "^3.1.0",
     "react-owl-carousel": "^2.3.3",
     "react-paginate": "^8.1.4",
+    "react-qr-code": "^2.0.15",
     "react-redux": "^8.1.2",
     "react-responsive-data-table": "^1.0.5",
     "react-router-dom": "^6.14.2",
@@ -115,8 +116,8 @@
     "predeploy:bhagini": "npm version patch && yarn update-readme && yarn run build:bhagini && yarn copy && yarn paste && yarn cut && yarn copyversion && yarn rename && yarn zip",
     "predeploy:samata": "npm version patch && yarn update-readme && yarn run build:samata && yarn copy && yarn paste && yarn cut && yarn copyversion && yarn rename && yarn zip",
     "predeploy:suvarna": "npm version patch && yarn update-readme && yarn run build:suvarna && yarn copy && yarn paste && yarn cut && yarn copyversion && yarn rename && yarn zip",
-    "rename": "rename build slnblmerchantpublic",
-    "zip": "powershell Compress-Archive slnblmerchantpublic slnblmerchantpublic.zip",
+    "rename": "rename build slnbl",
+    "zip": "powershell Compress-Archive slnbl slnbl.zip",
     "update-readme": "node update-readme.js"
   },
   "eslintConfig": {

@@ -51,6 +51,7 @@ export const apiList = {
   SELFTRANSFER: baseUrlServer + "transaction/selfAcct",
   TRANSACTIONBROWSE: baseUrlServer + "transactionBrowse",
   RTGSTRANSACTIONS: baseUrlServer + "transaction/rtgs",
+  QRCODEGWNERATE: baseUrlServer + "transaction/QR",
   VERIFYINTERNALBENEFICIARY: baseUrlServer + "beneficiary/verifyAcctNo",
 
   
@@ -148,6 +149,8 @@ STATEMENT: baseUrlServer + "viewStatement",
   CORPORATE_PDF_GENERATE: baseUrlServerCorporate + "pdfGenerateRequest",
   CORPORATE_PDF_DOWNLOAD: baseUrlServerCorporate + "pdfDownload",
   LOGOUT: baseUrlServerCorporate + "logout",
+  QRCODEGWNERATECORPORATE: baseUrlServerCorporate + "transaction/QR",
+
 
   //Deposit
   CORPORATE_FETCHDEPOSIT: baseUrlServerCorporate + "fetchDeposites",
