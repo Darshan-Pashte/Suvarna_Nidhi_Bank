@@ -2,7 +2,7 @@
   "name": "swift-corepe-admin",
   "version": "0.3.240",
   "private": true,
-  "homepage": "/slnblmerchant",
+  "homepage": "/slnbl",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -116,8 +116,8 @@
     "predeploy:bhagini": "npm version patch && yarn update-readme && yarn run build:bhagini && yarn copy && yarn paste && yarn cut && yarn copyversion && yarn rename && yarn zip",
     "predeploy:samata": "npm version patch && yarn update-readme && yarn run build:samata && yarn copy && yarn paste && yarn cut && yarn copyversion && yarn rename && yarn zip",
     "predeploy:suvarna": "npm version patch && yarn update-readme && yarn run build:suvarna && yarn copy && yarn paste && yarn cut && yarn copyversion && yarn rename && yarn zip",
-    "rename": "rename build slnblmerchant",
-    "zip": "powershell Compress-Archive slnblmerchant slnblmerchant.zip",
+    "rename": "rename build slnbl",
+    "zip": "powershell Compress-Archive slnbl slnbl.zip",
     "update-readme": "node update-readme.js"
   },
   "eslintConfig": {

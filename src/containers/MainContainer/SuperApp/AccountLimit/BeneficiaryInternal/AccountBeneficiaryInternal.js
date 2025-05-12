@@ -323,7 +323,7 @@ const AccountBeneficiaryInternal = () => {
 
     
     {
-      name: 'accNo',
+      name: 'virtualAccNo',
       label: 'Account Number',
       options: {
         filter: true,
