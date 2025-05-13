@@ -29,17 +29,14 @@ import html2canvas from "html2canvas";
 import sahyogLogo from "../../../../assets/Banks/Suvarna/images/Logo.svg";
 import QRCode from "react-qr-code";
 import { compareTextAndReturnObject } from "../../../../components/common/commonArray";
+import RadioGroupForm from "../../../../components/common/RedioButtonForm";
 
 
 const defaultFormData = {
-    bankcode: "",
-    ownerType: "",
-    ownerid: "",
-    name: "",
-    mobileno: "",
+    qrType: "Static",
+    remark: "",
+    amount: "",
     accountNumber: "",
-    pan: "",
-    userid: "",
 };
 
 const GenerateQRCodeCorporate = ({ accList }) => {
@@ -76,31 +73,61 @@ const GenerateQRCodeCorporate = ({ accList }) => {
         (state) => state.auth
     );
 
-    
-  const accountList =
-  user?.accountDetails &&
-  user?.accountDetails?.map((item) => ({
-    code: item.brCode,
-    value: item.accNo,
-  }));
+    const accountList =
+        user?.accountDetails &&
+        user?.accountDetails?.map((item) => ({
+            code: item.brCode,
+            value: item.accNo,
+        }));
 
-      const accNo = watch("accountNumber");
+ 
 
-      useEffect(() => {
+    useEffect(() => {
         const fetchData = async () => {
-          if (accNo) {
-            try {
-              await fetchBalance();
-              await fetchQRString();
-            } catch (error) {
-              console.error("Error in fetching data:", error);
+            const accNo = watch("accountNumber");
+            const qrType = watch("qrType")
+            if (accNo) {
+                try {
+                    await fetchBalance();
+                    if (qrType == "Static") await fetchQRString();
+                } catch (error) {
+                    console.error("Error in fetching data:", error);
+                }
             }
-          }
         };
-      
         fetchData();
-      }, [accNo]);
-      
+    }, [watch("accountNumber"),watch("qrType")]);
+
+    const shareQR = async () => {
+        if (navigator.share) {
+            try {
+                // Capture the QR code element using html2canvas
+                const canvas = await html2canvas(qrRef.current);
+                canvas.toBlob(async (blob) => {
+                    if (!blob) return;
+                    const file = new File([blob], "qrcode.png", { type: "image/png" });
+                    // Check if the browser supports sharing files
+                    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                        await navigator.share({
+                            title: "QR Code",
+                            text: "Here is the QR code for payment",
+                            files: [file],
+                        });
+                        console.log("QR Code shared successfully");
+                    } else {
+                        alert("Sharing images is not supported on this browser.");
+                    }
+                }, "image/png");
+            } catch (error) {
+                console.error("Error sharing the QR Code image", error);
+            }
+        } else {
+            alert("Web Share API is not supported in your browser.");
+        }
+    };
+
+
+
 
       const fetchBalance = async (data) => {
         try {
@@ -148,6 +175,32 @@ const GenerateQRCodeCorporate = ({ accList }) => {
         }
       };
     
+      const fetchQRStringDynamic = async (data) => {
+        try {
+            setIsloading(true);
+            const payload = {
+                accountNo: watch("accountNumber") ? watch("accountNumber")?.value : "",
+                custNo: user?.userId,
+                sessionId: user?.sessionId,
+                remark: data?.remark,
+                amount: data?.amount,
+                brCode: watch("accountNumber") ? watch("accountNumber")?.code : "",
+            };
+            const response = await postApiData(apiList.QRCODEGWNERATECORPORATEDYNAMIC, payload);
+            console.log("qrstring", response)
+            if (response?.status == true) {
+                setQrResponse(response?.data?.genrateQr);
+                handleGenerateQRCodeImageDynamic(response?.data?.genrateQr?.url);
+                setIsloading(false);
+            } else {
+                setIsloading(false);
+            }
+        } catch (err) {
+            //   console.log(err)
+            setIsloading(false);
+        }
+    };
+
 
     useEffect(() => {
         if (accountList) {
@@ -204,12 +257,65 @@ const GenerateQRCodeCorporate = ({ accList }) => {
         setQrValue(qrResponse?.url);
     };
 
+    const handleGenerateQRCodeImageDynamic = (data) => {
+        setQrValue(data);
+    };
+
     const handleResetData = () => {
         setValue("accountno", "")
         setValue("amount", "")
         setFetchBalanceData(null)
         setQrValue("")
     }
+
+    useEffect(() => {
+        const qrType = watch("qrType");
+
+        // Reset amount, remark, and QR display
+        setValue("amount", "");
+        setValue("remark", "");
+        setQrValue("");
+
+        // const accNoValue = watch("accountNumber");
+        // const fetchData = async () => {
+        //     if (accNoValue) {
+        //         if (qrType === "Static") {
+        //             await fetchBalance();
+        //            await fetchQRString();
+        //         } 
+        //     }
+
+        // }
+
+        // fetchData()
+    }, [watch("qrType")]);
+
+    // useEffect(() => {
+    //     const qrType = watch("qrType");
+    //     const accNoValue = watch("accountNumber");
+
+    //     // Reset amount, remark, and QR
+    //     setValue("amount", "");
+    //     setValue("remark", "");
+    //     setQrValue("");
+
+    //     const fetchDataSequentially = async () => {
+    //         if (qrType === "Static") {
+    //             try {
+    //                 const balanceFetched = await fetchBalance();
+    //                 if (balanceFetched) {
+    //                     await fetchQRString();
+    //                 }
+    //             } catch (error) {
+    //                 console.error("Error during fetch sequence:", error);
+    //             }
+    //         }
+    //     };
+
+    //     fetchDataSequentially();
+    // }, [watch("qrType")]);
+
+
 
     const handleGenerateQRCode = async (data) => {
         setIsloading(true);
@@ -346,24 +452,41 @@ const GenerateQRCodeCorporate = ({ accList }) => {
                         <Box
                             className={classes.mainContainer}
                             component="form"
-                            onSubmit={handleSubmit(handleGenerateQRCodeImage)}
+                            onSubmit={handleSubmit(watch("qrType") == "Static" ? handleGenerateQRCodeImage : fetchQRStringDynamic)}
                         >
                             <div className={classes.SboxQR}>
-                                <Grid container columnSpacing={2} rowSpacing={2}>
-                                    <Grid item xs={12} sm={12} md={8} style={{ padding: "50px" }}>
-                                        <div
-                                            style={
-                                                {
-                                                    //   display: "flex",
-                                                    //   flexDirection: "column",
-                                                    //   alignItems: "center",
-                                                    //   justifyContent:"center",
-                                                    //   rowGap: "10px",
-                                                }
-                                            }
-                                        >
+                                <Grid container columnSpacing={2} rowSpacing={2} >
+
+                                    <Grid item xs={12} sm={12} md={8} style={{ padding: "0 50px" }}>
+                                        <div>
                                             <div>
                                                 <div className={classes.formbox}>
+                                                    <Grid item xs={12} sm={12} md={12} style={{ padding: "15px 0" }}>
+                                                        <div className={classes.frowdata11}>
+                                                            <div className={classes.frowtext}>
+                                                                QR Code Type<sup className={classes.required}>*</sup>
+                                                            </div>
+                                                            <RadioGroupForm
+                                                                controlerProps={{
+                                                                    control: control,
+                                                                    name: "qrType",
+                                                                }}
+                                                                data={[
+                                                                    {
+                                                                        label: "Statiic",
+                                                                        value: "Static",
+                                                                    },
+                                                                    {
+                                                                        label: "Dynamic",
+                                                                        value: "Dynamic",
+                                                                    },
+                                                                ]}
+                                                                rules={{ required: "QR Code Type" }}
+                                                                errorMessage={"QR Code Type"}
+                                                                required={true}
+                                                            />
+                                                        </div>
+                                                    </Grid>
                                                     <Grid container columnSpacing={2} rowSpacing={2}>
                                                         <Grid item xs={12} sm={12} md={6}>
                                                             <div className={classes.frowdata11}>
@@ -414,32 +537,37 @@ const GenerateQRCodeCorporate = ({ accList }) => {
                                                             </div>
                                                         </Grid>
 
-                                                        <Grid
-                                                            item
-                                                            xs={12}
-                                                            sm={12}
-                                                            md={6}
-                                                            style={{  marginTop: "20px"}}
-                                                        >
-                                                            <div style={{ display: "flex", gap: "10px" }}>
-                                                                <ColorButton1 variant="contained" type="submit">
-                                                                Generate QR
-                                                                </ColorButton1>
-                                                                <ColorButton
-                                                                variant="contained"
-                                                                type="button"
-                                                                // disabled={watch("amount") ? false : true}
-                                                                onClick={handleResetData}
-                                                            >
-                                                                Reset
-                                                            </ColorButton>
-                                                            </div>
-                                                        </Grid>
+                                                        {
+                                                            watch("qrType") == "Static" && (
+                                                                <Grid
+                                                                    item
+                                                                    xs={12}
+                                                                    sm={12}
+                                                                    md={6}
+                                                                    style={{ marginTop: "20px" }}
+                                                                >
+                                                                    <div style={{ display: "flex", gap: "10px" }}>
+                                                                        <ColorButton1 variant="contained" type="submit">
+                                                                            Generate QR
+                                                                        </ColorButton1>
+                                                                        <ColorButton
+                                                                            variant="contained"
+                                                                            type="button"
+                                                                            // disabled={watch("amount") ? false : true}
+                                                                            onClick={handleResetData}
+                                                                        >
+                                                                            Reset
+                                                                        </ColorButton>
+                                                                    </div>
+                                                                </Grid>
+                                                            )
+                                                        }
+
                                                     </Grid>
                                                 </div>
                                             </div>
                                             <Grid container columnSpacing={2} rowSpacing={2}>
-                                                <Grid item xs={12} sm={12} md={10}>
+                                                <Grid item xs={12} sm={12} md={12}>
                                                     {fetchBalanceData != null && (
                                                         <div
                                                             style={
@@ -483,7 +611,127 @@ const GenerateQRCodeCorporate = ({ accList }) => {
                                                     )}
                                                 </Grid>
                                             </Grid>
-                                          
+                                            {
+                                                watch("qrType") == "Dynamic" && (
+                                                    <div className={classes.formbox}>
+                                                        <Grid container columnSpacing={2} rowSpacing={2}>
+                                                            <Grid item xs={12} sm={12} md={6}>
+                                                                <div className={classes.frowdataaff}>
+                                                                    <div className={classes.frowtextaff}>
+                                                                        Amount<sup className={classes.required}>*</sup>
+                                                                    </div>
+                                                                    <div className={classes.frow1aff}>
+                                                                        <TextFieldForm
+                                                                            controlerProps={{
+                                                                                control: control,
+                                                                                name: "amount",
+                                                                                rows: 5,
+                                                                                maxRows: 10,
+                                                                            }}
+                                                                            TextFieldProps={{
+                                                                                // label: "Name",
+                                                                                placeholder: "Amount",
+                                                                                // style: { width: "33vw" },
+                                                                                fullWidth: true,
+                                                                                disabled: qrValue != "" ? true : false,
+                                                                                inputProps: {
+                                                                                    //   minLength: 15,
+                                                                                    maxLength: 15,
+                                                                                },
+                                                                            }}
+                                                                            regExp={/^[0-9.]+$/}
+                                                                            backgroundColor={qrValue != "" ? true : false}
+                                                                            rules={{
+                                                                                required:
+                                                                                    "Amount" +
+                                                                                    errorMessages.error_autocomplete_message,
+                                                                                pattern: {
+                                                                                    value: /^(?!0+$)[0-9.]{1,15}$/,
+                                                                                    message: "Please enter a valid Amount",
+                                                                                },
+                                                                                validate: (value) => {
+                                                                                    if (value.length === 0) {
+                                                                                        return "Please enter an amount";
+                                                                                    }
+                                                                                    if (value.length > 15) {
+                                                                                        return "Amount cannot exceed 15 digits";
+                                                                                    }
+                                                                                    if (value === "0".repeat(value.length)) {
+                                                                                        return "Amount cannot be all zeros";
+                                                                                    }
+                                                                                    return true;
+                                                                                },
+                                                                            }}
+                                                                            required={true}
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                            </Grid>
+
+                                                            <Grid item xs={12} sm={12} md={6}>
+                                                                <div className={classes.frowdataaff}>
+                                                                    <div className={classes.frowtextaff}>
+                                                                        Remark<sup className={classes.required}>*</sup>
+                                                                    </div>
+                                                                    <div className={classes.frow1aff}>
+                                                                        <TextFieldForm
+                                                                            controlerProps={{
+                                                                                control: control,
+                                                                                name: "remark",
+                                                                                rows: 5,
+                                                                                maxRows: 10,
+                                                                            }}
+                                                                            TextFieldProps={{
+                                                                                // label: "Name",
+                                                                                placeholder: "Remark",
+                                                                                // style: { width: "33vw" },
+                                                                                fullWidth: true,
+                                                                                disabled: qrValue != "" ? true : false,
+                                                                                inputProps: {
+                                                                                    //   minLength: 15,
+                                                                                    maxLength: 15,
+                                                                                },
+                                                                            }}
+                                                                            regExp={/^[a-zA-Z0-9., ]+$/}
+                                                                            backgroundColor={qrValue != "" ? true : false}
+                                                                            rules={{
+                                                                                required:
+                                                                                    "Remark" +
+                                                                                    errorMessages.error_autocomplete_message,
+                                                                            }}
+                                                                            required={true}
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                            </Grid>
+
+
+                                                            <Grid
+                                                                item
+                                                                xs={12}
+                                                                sm={12}
+                                                                md={6}
+                                                                style={{ marginTop: "20px" }}
+                                                            >
+                                                                <div style={{ display: "flex", gap: "10px" }}>
+                                                                    <ColorButton1 variant="contained" type="submit">
+                                                                        Generate QR
+                                                                    </ColorButton1>
+                                                                    <ColorButton
+                                                                        variant="contained"
+                                                                        type="button"
+                                                                        // disabled={watch("amount") ? false : true}
+                                                                        onClick={handleResetData}
+                                                                    >
+                                                                        Reset
+                                                                    </ColorButton>
+                                                                </div>
+                                                            </Grid>
+                                                        </Grid>
+                                                    </div>
+
+                                                )
+                                            }
                                         </div>
                                     </Grid>
 
@@ -505,24 +753,24 @@ const GenerateQRCodeCorporate = ({ accList }) => {
                                             )}
                                         </div>
                                         {qrValue && (
-                                            <div style={{ display: "flex",justifyContent:"center" }}>
+                                            <div style={{ display: "flex", justifyContent: "center" }}>
                                                 <ColorButton1
                                                     onClick={downloadQRCode}
-                                                    // style={{
-                                                    //     // marginTop: "20px",
-                                                    //     width: "150px",
-                                                    // }}
+                                                // style={{
+                                                //     // marginTop: "20px",
+                                                //     width: "150px",
+                                                // }}
                                                 >
                                                     Download
                                                 </ColorButton1>
-                                                {/* <ColorButton1
-                                                    onClick={() => window.print()}
+                                                <ColorButton1
+                                                    onClick={() => shareQR()}
                                                     style={{
                                                         width: "150px",
                                                     }}
                                                 >
-                                                    Print
-                                                </ColorButton1> */}
+                                                    Share
+                                                </ColorButton1>
                                             </div>
 
                                         )}
