@@ -436,6 +436,9 @@ console.log("useriddddddddddd", userId)
   function handleDisclaimer() {
     navigate("/auth/disclaimer");
   }
+  function handleMerchantPolicy() {
+    navigate("/auth/merchantpolicy");
+  }
   function handlesecuritytips() {
     navigate("/auth/securitytips");
   }
@@ -1045,7 +1048,7 @@ console.log("useriddddddddddd", userId)
               </div> */}
 
 <div className={classes.content}>By clicking ‘Login’, you acknowledge that you have reviewed<br /> & agree to our <span onClick={handleTerms} className={classes.termsspan} >
-                {" "}Terms & conditions</span>,{" "}<span onClick={handlePrivacyPolicy} className={classes.termsspan}>Privacy Policy</span>,{" "}<span onClick={handleDisclaimer} className={classes.termsspan}>Disclaimer</span><br/>& <span onClick={handlesecuritytips} className={classes.termsspan}>
+                {" "}Terms & conditions</span>,{" "}<span onClick={handlePrivacyPolicy} className={classes.termsspan}>Privacy Policy</span>,{" "}<span onClick={handleDisclaimer} className={classes.termsspan}>Disclaimer</span><br/><span onClick={handleMerchantPolicy} className={classes.termsspan}>Merchant Policy</span> {" "} & <span onClick={handlesecuritytips} className={classes.termsspan}>
                   Tips for Safe Banking</span>
               </div>
 

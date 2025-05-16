@@ -18,6 +18,7 @@ import PrivayPolicyBhagini from '../containers/MainContainer/SuperApp/Privacypol
 import Disclaimerbhagini from '../containers/MainContainer/SuperApp/Disclaimer/Disclaimerbhagini';
 import SecurityTipsBhagini from '../containers/MainContainer/SuperApp/SecurityTips/Securitytipsbhagini';
 import Disclaimer from '../containers/MainContainer/SuperApp/Disclaimer/Disclaimer';
+import MerchantPrivayPolicy from '../containers/Login/MerchantPrivacyPolicy';
 
 
 const AuthLayout = () => {
@@ -40,6 +41,16 @@ const AuthLayout = () => {
   const getPrivacyComponent = () => {
     if (bankNames === 'Mahesh' || bankNames === 'Samta' || bankNames === 'Suvarna') {
       return <PrivayPolicy/>;
+    }
+    if (bankNames === 'Bhagini') {
+      return <PrivayPolicyBhagini/>;
+    }
+    return null; // Return null if the bank name doesn't match expected values
+  };
+
+  const getMerchantPrivacyComponent = () => {
+    if (bankNames === 'Mahesh' || bankNames === 'Samta' || bankNames === 'Suvarna') {
+      return <MerchantPrivayPolicy/>;
     }
     if (bankNames === 'Bhagini') {
       return <PrivayPolicyBhagini/>;
@@ -86,9 +97,9 @@ const AuthLayout = () => {
       <Route path='/resetpassword' element={isAuthenticated ? <Navigate  to='/dashboard'/> : <ResetPassword />}/>
       <Route path='/opps' element={isAuthenticated ? <Navigate  to='/dashboard'/> : <Opps />} />
       <Route path='/termsconditions' element={isAuthenticated ? <Navigate  to='/dashboard'/> : getTermsConditionsComponent()} />
-      {/* <Route path='/atmverify' element={ <ATMVerify />} /> */}
       <Route path='/securitytips' element={isAuthenticated ? <Navigate  to='/dashboard'/> : getSecurityComponent()} />
       <Route path='/privacypolicy' element={isAuthenticated ? <Navigate  to='/dashboard'/> : getPrivacyComponent()} />
+      <Route path='/merchantpolicy' element={isAuthenticated ? <Navigate  to='/dashboard'/> : getMerchantPrivacyComponent()} />
       <Route path='/disclaimer' element={isAuthenticated ? <Navigate  to='/dashboard'/> : getDisclaimerComponent()} />
     </Routes>
   );
