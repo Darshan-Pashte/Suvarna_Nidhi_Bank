@@ -166,7 +166,7 @@ const TransactionReceipt = () => {
                     : 'NA'
             },
             {
-                label: 'Transaction Status', value: location?.state?.rowData?.responseCode === "00" || location?.state?.rowData?.respcode === "0"
+                label: 'Transaction Status', value: location?.state?.rowData?.responseCode === "00" || location?.state?.rowData?.respcode === "0" || location?.state?.rowData?.responseCode === "300"
                     ? "Transaction Successful"
                     : "Transaction Failed"
             },
@@ -174,7 +174,7 @@ const TransactionReceipt = () => {
             { label: 'Transaction Type', value: location?.state?.rowData?.transType || 'NA'},
             { label: 'Remitter Account Number', value: location?.state?.rowData?.remAccno || 'NA' },
             { label: 'Remitter Name', value: selectedAccountName || 'NA'},
-            { label: 'Beneficiary Name', value: location?.state?.rowData?.beneName || 'NA'},
+            { label: 'Beneficiary Name', value: location?.state?.rowData?.benName || 'NA'},
             { label: 'Beneficiary Account Number', value: location?.state?.rowData?.benAccno || 'NA'},
             { label: 'Beneficiary IFSC Code', value: location?.state?.rowData?.benIfsccd || 'NA'},
             { label: 'Narration', value: location?.state?.rowData?.remark || 'NA'},
@@ -261,7 +261,7 @@ const TransactionReceipt = () => {
                     : ''}
             </div>
             <div
-                className={`${Classes.transactionheading} ${location?.state?.rowData?.responseCode === "00" || location?.state?.rowData?.responseCode === "0" ? Classes.success : Classes.failed}`}
+                className={`${Classes.transactionheading} ${location?.state?.rowData?.responseCode === "00" || location?.state?.rowData?.responseCode === "0" || location?.state?.rowData?.responseCode === "300" ? Classes.success : Classes.failed}`}
             >
                 {location?.state?.rowData?.responseCode === "00" || location?.state?.rowData?.responseCode === "0" || location?.state?.rowData?.responseCode === "300"
                     ? "Transaction Successful"
