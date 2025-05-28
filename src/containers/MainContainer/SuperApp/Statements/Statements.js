@@ -490,6 +490,7 @@ const Statements = ({ accList }) => {
   const [branchDetails, setBranchDetails] = useState("");
   const [custDetails, setCustDetails] = useState("");
   const [accountDetails, setAccountDetails] = useState("");
+  const [responseData, setResponseData] = useState("");
 
 
   const bankContactInfo = JSON.parse(process.env.REACT_APP_STRING);
@@ -922,7 +923,8 @@ const Statements = ({ accList }) => {
         const customerDetailsAdd2 = `${custDetails?.add2}`;
         const customerDetailsAdd3 = `${custDetails?.add3}`;
 
-        const accountDetailsAccountNo = `${accountDetails?.acctno}`;
+        // const accountDetailsAccountNo = `${accountDetails?.acctno}`;
+        const accountDetailsAccountNo = `${responseData?.virtualAccNo}`;
         const brCodeAccountDetails = `${branchDetails?.brCode}`;
         const accountDetailsFormatted = `${accountDetails?.openingBalance || "0.00"}`;
         const debitAmountFormatted = `${accountDetails?.drAmt || "0.00"}`;                // Debit Amount
@@ -1100,6 +1102,7 @@ const Statements = ({ accList }) => {
           setBranchDetails(response?.data?.statement?.branchDetails);
           setCustDetails(response?.data?.statement?.custDetails);
           setAccountDetails(response?.data?.statement);
+          setResponseData(response?.data);
         } else {
           setAtmMasterList([]);
           SweetAlertPopup(response?.message, 'Error', 'error');
