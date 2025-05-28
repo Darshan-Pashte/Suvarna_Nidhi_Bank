@@ -12,6 +12,8 @@ const SliderTestimonials = ({ accList, isLoading }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [toggleStates, setToggleStates] = React.useState(Array(accList?.length)?.fill(false));
   const { loading, error, isAuthenticated, user } = useSelector((state) => state.auth);
+  const theme = useSelector((state) => state.theme.theme);
+
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % accList?.length);
@@ -114,7 +116,7 @@ const SliderTestimonials = ({ accList, isLoading }) => {
             </IconButton>
           </Box>
         ) : (
-          <div className={classes.nodata}>No data available</div>
+          <div className={`${classes.nodata} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>No data available</div>
         )}
       </Box>
     </>

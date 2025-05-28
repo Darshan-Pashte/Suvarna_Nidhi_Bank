@@ -88,6 +88,11 @@ export default function TextFieldForm(props) {
                 "@media (max-width: 568px)": {
                   padding: "20px 10px",
                 },
+                '&:focus': {
+                  boxShadow: "rgba(0, 0, 0, 0.16) 0px 2px 5px",
+                  // border: "2px solid",
+      borderColor: '#242A42', // Fallback if Mui-focused doesn't work
+    },
               },
             }}
             error={shouldShowError}

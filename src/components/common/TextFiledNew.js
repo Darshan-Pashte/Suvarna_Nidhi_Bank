@@ -125,6 +125,11 @@ export default function TextFiledNew(props) {
 
                 // width: '520px',
                 padding: "16px 10px",
+                '&:focus': {
+                  boxShadow: "rgba(0, 0, 0, 0.16) 0px 2px 5px",
+                  // border: "2px solid",
+                  borderColor: '#242A42', // Fallback if Mui-focused doesn't work
+                },
               },
             }}
             error={required && !!fieldState.error}

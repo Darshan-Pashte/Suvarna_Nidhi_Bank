@@ -8,6 +8,7 @@
 // gap: 6px;
   height: 3.762vw;
   position: sticky;
+  transition: 1s all;
   top: 0;
   justify-content: space-between;
   align-items: center;
@@ -21,6 +22,7 @@
     height: 100%;
     display: flex;
     gap: 4.233vw;
+    transition: 1s all;
     // background: var(--common-background-color);
     // background: #FFF5EB;
     justify-content: center;
@@ -28,6 +30,100 @@
 // border-top-right-radius: 8px;
 // border-bottom-right-radius: 8px;
 background: var(--primary-color);
+box-shadow: -1px 9px -5px -5px rgba(54, 54, 54, 0.05), 0 1px 9px 0 rgba(0, 0, 0, 0.07);;
+// box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.07);
+// -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.75);
+// box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.75);
+// ;
+    // box-shadow: -1px 9px 6.2px -5px rgba(54, 54, 54, 0.05), 0 1px 9px 0 rgba(0, 0, 0, 0.07);
+    .headerTitle{
+      // color: #000;
+      color: var(--common-heading-color);
+      padding-left: 20px;
+      font-size: 15px;
+    }
+    .analytics {
+      display: flex;
+      gap: 1.646vw;
+    }
+    .mainAnalytics {
+      height: 4.762vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.265vw;
+      padding: 0.529vw;
+      box-sizing: border-box;
+      .analyticsValue {
+        font-weight: 700;
+        font-size: 1.323vw;
+      }
+      .analyticsTitle {
+        font-weight: 600;
+        font-size: 0.794vw;
+      }
+    }
+    .AnalyticsContainer {
+      display: flex;
+      gap: 1vw;
+      .eachAnalytics {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.265vw;
+        .analyticsValue {
+          font-weight: 700;
+          font-size: 1.323vw;
+        }
+        .analyticsTitle {
+          font-weight: 600;
+          font-size: 0.794vw;
+        }
+      }
+      .separator {
+        width: 0.1vw;
+        background-color: #bec0cc;
+        height: 60%;
+        margin: 1vw 0;
+      }
+    }
+  }
+}
+
+.HeaderContainer.DarkTheme {
+  // background-color: var(--body-background-color) !important;
+  // background: #383b53;
+  // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+  background-color: var(--theme-background-color);
+  display: flex;
+// border-bottom: solid 1.2px #FF4949;
+// gap: 6px;
+  height: 3.762vw;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  // padding: 0 1.587vw;
+  box-sizing: border-box;
+  color: #f1f2f8;
+  
+  
+
+
+  .LeftContainer.DarkTheme {
+    width: 18vw;
+    height: 100%;
+    display: flex;
+    gap: 4.233vw;
+    // background: var(--common-background-color);
+    // background: #FFF5EB;
+    justify-content: center;
+    align-items: center;
+// border-top-right-radius: 8px;
+// border-bottom-right-radius: 8px;
+background: var(--theme-background-color);
 box-shadow: -1px 9px -5px -5px rgba(54, 54, 54, 0.05), 0 1px 9px 0 rgba(0, 0, 0, 0.07);;
 // box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.07);
 // -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.75);
@@ -131,6 +227,10 @@ display: flex;
   // color: #AA1313;
 }
 
+.chevronButton.DarkTheme {
+  color: var(--theme-text-color);
+}
+
 .nameadmin{
   // color: #000;
   // color: var(--common-heading-color);
@@ -141,6 +241,20 @@ font-size: 0.9rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+
+.nameRole{
+  font-size: "12px";
+   font-weight: "400";
+    color: "#000";
+}
+
+.nameRole.DarkTheme{
+  color: var(--theme-text-color);
+}
+
+.nameadmin.DarkTheme{
+  color: var(--theme-text-color);
 }
 
 .ProfileContainer {
@@ -329,6 +443,17 @@ line-height: normal;
   font-weight: 600;
   line-height: 0px;
 }
+
+.welcometitle.DarkTheme{
+  // color: #183883;
+  // color:var(--common-heading-color);
+  // color: #042879;
+  color: var(--theme-text-color);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0px;
+}
 .LeftContainer{
   padding-top: 5vh;
 
@@ -351,6 +476,12 @@ line-height: normal;
 .textlastlogin{
   text-align: center;
 }
+
+.textlastlogin.DarkTheme{
+  text-align: center;
+  color: var(--theme-text-color);
+}
+
 .lefttitlelogo{
   // max-width: 100%;
   // max-height: 100%;

@@ -92,6 +92,10 @@ import { useState } from 'react';
         '"Segoe UI Symbol"',
         'Poppins'
       ].join(','),
+      '&.Mui-focused': {
+        boxShadow: "rgba(0, 0, 0, 0.16) 0px 2px 5px",
+      borderColor: '#242A42',
+      },
       '&:focus': {
         // boxShadow: `${alpha(theme.palette.primary.main, 0.25)} 0 0 0 0.2rem`,
         // borderColor: theme.palette.primary.main,  

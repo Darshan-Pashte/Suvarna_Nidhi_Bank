@@ -44,5 +44,8 @@ body {
       --body-background-color: #FFFBF2;
   
     /* --------------------------New Theme----------------------------------- */
+    --theme-background-color: #424242;
+    --theme-background-content-color: #212121;
+    --theme-text-color: #fff;
   
   }

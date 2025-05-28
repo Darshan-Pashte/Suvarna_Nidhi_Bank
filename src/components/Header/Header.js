@@ -15,6 +15,7 @@ import { logout } from '../../store/authSlice';
 // import headerLogo from "../../components/Sidebar/SidebarIcons/Logo.svg";
 import { postApiData } from '../utilities/nodeApiServices';
 import { apiList } from '../utilities/nodeApiList';
+
 // import logo from "../../assets/images/backupImages/Bhagini/Logo.svg";
 // import headerLogo from "../../assets/images/commonforweb/maheshBnk.PNG";
 
@@ -31,6 +32,8 @@ const Header = ({ analytics }) => {
   // const [userName, setUserName] = useState("");
   const [lastLogin, setLastLogin] = useState("");
   const [logo, setBackgroundImage] = useState(null);
+  const theme = useSelector((state) => state.theme.theme);
+
   // console.log("lastLogin",lastLogin)
 
   // useEffect(() => {
@@ -138,8 +141,8 @@ const Header = ({ analytics }) => {
   };
 
   return (
-    <div className={classes.HeaderContainer}>
-      <div className={classes.LeftContainer}>
+    <div className={`${classes.HeaderContainer} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
+      <div  className={`${classes.LeftContainer} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
         <div className={classes.lefttitle}>
           <img className={classes.lefttitlelogo} src={logo} alt='' onClick={handleLogoClick}/>
 
@@ -168,14 +171,14 @@ const Header = ({ analytics }) => {
         </div> */}
       </div>
       <div className={classes.RightContainer}>
-        <div className={classes.welcometitle}>{userType == "corporate" ? "Welcome to Corporate Banking" : "Welcome to Internet Banking"}</div>
+        <div  className={`${classes.welcometitle} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>{userType == "corporate" ? "Welcome to Corporate Banking" : "Welcome to Internet Banking"}</div>
        
 
         <div className={classes.ProfileSection}>
         <div className={classes.Title}>
           <div className={classes.lastLogin}>
-            <div className={classes.textlastlogin} >Last Login</div>
-            <div>
+            <div className={`${classes.textlastlogin} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`} >Last Login</div>
+            <div className={`${classes.textlastlogin} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
             {user?.lastLogin}
             </div>
           </div>
@@ -185,10 +188,10 @@ const Header = ({ analytics }) => {
             {/* <div>{state?.user?.firstName + ' ' + state?.user?.lastName}</div> */}
             {/* <div>{state?.username}</div> */}
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-              <div className={classes.nameadmin}>{user?.customerName}</div>
-              <div style={{ fontSize: "12px", fontWeight: "400", color: "#000" }}>{user?.userId}{" "}{user?.userRole && `(${user?.userRole})`}</div>
+              <div className={`${classes.nameadmin} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>{user?.customerName}</div>
+              <div className={`${classes.nameRole} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`} >{user?.userId}{" "}{user?.userRole && `(${user?.userRole})`}</div>
             </div>
-            <img className={classes.chevronButton} src={ChevronDown} alt='' />
+            <img className={`${classes.chevronButton} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`} src={ChevronDown} alt='' />
             {showProfile ? (
               <ul>
                 <li onClick={handleSettings}><img src={SettingIcon} alt='settings' />Settings</li>

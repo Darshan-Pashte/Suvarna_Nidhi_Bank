@@ -754,14 +754,6 @@ const Routes = () => {
           component: <PaymentSuccess />,
           Icon: FundTranfer,
         },
-        // {
-        //   name: "Imps Details",
-        //   id: "impsdetails",
-        //   url: array[0] == "1" ? "/impsdetails" : null,
-        //   roles: [],
-        //   component: <BeneficiaryDetails />,
-        //   Icon: FundTranfer,
-        // },
         {
           name: "IMPS Details",
           id: "impsdetails",

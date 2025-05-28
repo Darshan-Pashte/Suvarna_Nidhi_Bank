@@ -319,7 +319,7 @@ const [receiptData, setReceiptData] = useState([]);
             }
         },
         {
-            name: "beneName",
+            name: "benName",
             label: "Beneficiary Name",
             options: {
                 filter: true,

@@ -12,6 +12,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';
 import { store } from './store/store';
 import { ConnProvider } from './context/ConContext';
+import FloatingButton from './components/common/GlobalButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -23,6 +24,7 @@ root.render(
       <ConnProvider>
       {/* <AuthProvider> */}
         <App />
+        {/* <FloatingButton /> */}
       {/* </AuthProvider> */}
         </ConnProvider>
     </LoaderProvider>

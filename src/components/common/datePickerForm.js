@@ -59,6 +59,10 @@ marginTop:"3px",
       "@media (max-width: 568px)": {
         padding: "20px 10px",
       },
+      '&.Mui-focused': {
+        boxShadow: "rgba(0, 0, 0, 0.16) 0px 2px 5px",
+      borderColor: '#242A42',
+      },
    
       // Use the system font instead of the default Roboto font.
 
@@ -74,6 +78,19 @@ border:0
         border:0
       }
     },
+     // Style for when the calendar popup is open
+     '&.Mui-focused .MuiInputBase-root': {
+      borderColor: '#242A42',
+    },
+      // Style for the calendar icon button
+  '& .MuiButtonBase-root.MuiIconButton-root': {
+    '&:hover': {
+      color: '#242A42', // Icon color on hover
+    },
+    '&.Mui-focused': {
+      color: '#242A42', // Icon color when focused
+    }
+  }
   }));
 
 

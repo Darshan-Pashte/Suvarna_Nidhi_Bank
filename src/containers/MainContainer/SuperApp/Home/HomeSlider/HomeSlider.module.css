@@ -256,6 +256,10 @@ justify-content: center;
 margin-top: 180px;
 }
 
+/* .nodata{
+    color: var( --theme-background-content-color);
+} */
+
 
 @media screen and (max-width: 568px){
     .imageSlider{

@@ -475,18 +475,22 @@ const LoginContainer1 = ({captcha}) => {
                                 maxLength: 30, // Maximum length
                               }}// Spread the 'field' props to bind it to the form's state
                               sx={{
-                                "& fieldset": { border: "none" },
-                                ".MuiInputBase-root": {
+                                "& .MuiOutlinedInput-root": {
                                   borderRadius: "6px",
                                   height: "35px",
-                                  //   backgroundColor: "rgb(238, 239, 247)",
                                   backgroundColor: "#FFF",
-                                  fontSize: '13px',
-
-                                  color: '#888',
-                                  fontWeight: '500',
-                                  border: '1px solid var(--For-stroke, #D6DAE1);',
-                                  //   width:'130%'
+                                  fontSize: "13px",
+                                  color: "#888",
+                                  fontWeight: 500,
+                                  border: "1px solid var(--For-stroke, #D6DAE1)",
+                                  "&.Mui-focused": {
+                                    boxShadow: "rgba(0, 0, 0, 0.16) 0px 2px 5px",
+                                    // border: "2px solid",
+                        borderColor: '#242A42', // Fallback if Mui-focused doesn't work
+                                  },
+                                },
+                                "& .MuiOutlinedInput-notchedOutline": {
+                                  border: "none", // Remove default outline
                                 },
                               }}
                               error={!!fieldState.error}
@@ -617,19 +621,23 @@ const LoginContainer1 = ({captcha}) => {
                                   maxLength: 20, // Maximum length
                                 }}// Spread the 'field' props to bind it to the form's state
                                 sx={{
-                                  "& fieldset": { border: "none" },
-                                  ".MuiInputBase-root": {
+                                  "& .MuiOutlinedInput-root": {
                                     borderRadius: "6px",
                                     height: "35px",
-                                    //   backgroundColor: "rgb(238, 239, 247)",
                                     backgroundColor: "#FFF",
-                                    fontSize: '13px',
-
-                                    color: '#888',
-                                    fontWeight: '500',
-
-                                    border: '1px solid var(--For-stroke, #D6DAE1);',
-                                    //   width:'130%'
+                                    fontSize: "13px",
+                                    color: "#888",
+                                    fontWeight: 500,
+                                    border: "1px solid var(--For-stroke, #D6DAE1)",
+                                   
+                                    "&.Mui-focused": {
+                                      boxShadow: "rgba(0, 0, 0, 0.16) 0px 2px 5px",
+                                      // border: "2px solid",
+                          borderColor: '#242A42', // Fallback if Mui-focused doesn't work
+                                    },
+                                  },
+                                  "& .MuiOutlinedInput-notchedOutline": {
+                                    border: "none", // Remove default outline
                                   },
                                 }}
 

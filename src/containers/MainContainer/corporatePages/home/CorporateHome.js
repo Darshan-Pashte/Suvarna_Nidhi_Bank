@@ -77,6 +77,7 @@ function a11yProps(index) {
 
 const Home = () => {
   const [valueTable, setValueTable] = React.useState(0);
+  const theme = useSelector((state) => state.theme.theme);
 
   const handleChange = (event, newValue) => {
     setValueTable(newValue);
@@ -134,7 +135,7 @@ const Home = () => {
       <div className={classes.cardsmainpage}>
 
 
-        {/* <div className={classes.gridtitle}>Account Statement</div> */}
+        {/* <div className={`${classes.gridtitle} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>Account Statement</div> */}
 
         <div className={classes.cardscontent}>
           <Grid
@@ -146,15 +147,15 @@ const Home = () => {
 
             {/* <Grid item xs={12} sm={12} md={12} ><div className={classes.gridtitlefirst}>Hi,{user?.customerName}(Welcome to Mahesh Bank)</div> </Grid> */}
             <Grid item xs={12} sm={12} md={6} >
-              <div className={classes.gridtitle}>Account Details</div>
-              <div className={classes.cardsBoxCard}>
+              <div className={`${classes.gridtitle} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>Account Details</div>
+              <div className={`${classes.cardsBoxCard} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
                 {isLoading ? (<Loader loading={true} />) : (<><Loader loading={false} /><SliderTestimonials accList={accList} /></>)}
               </div>
             </Grid>
 
 
             <Grid item xs={12} sm={12} md={6}>
-              <div className={classes.gridtitle}>Account Statement</div>
+              <div className={`${classes.gridtitle} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>Account Statement</div>
 
               <div className={classes.cardsBox}>
 
@@ -164,7 +165,7 @@ const Home = () => {
             
             <Grid item xs={12} sm={12} md={12}>
               <div className={classes.corporateHomeMain}>
-                <div className={classes.gridtitle}>Financial Overview</div>
+                <div className={`${classes.gridtitle} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>Financial Overview</div>
                 {/* <div className={classes.gridimage}> <img src={refresh} alt="headerLogo" /></div> */}
               </div>
 

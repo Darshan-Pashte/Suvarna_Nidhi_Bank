@@ -16,6 +16,7 @@ import { set } from "react-hook-form";
 import { Button } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../store/authSlice";
+import ThemeButton from "../common/ThemeButton";
 // import { animated } from 'react-spring';
 const package_json = require("../../../package.json");
 
@@ -50,6 +51,8 @@ const Sidebar = ({opens,setOpens}) => {
   const dispatch = useDispatch();
   const [SidebarImageIcon, setSidebarImageIcon] = useState(null);
   const [logo, setlogo] = useState(null);
+  const theme = useSelector((state) => state.theme.theme);
+  const themeClass = ThemeButton()
 
   const handleDrawerOpen = () => {
     setOpens(true);
@@ -557,7 +560,7 @@ const Sidebar = ({opens,setOpens}) => {
         <div />
       </div>
       {/* Laptop */}
-      <div id="mySidebar" className={classes.Sidebar}>
+      <div id="mySidebar" className={`${classes.Sidebar} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
         <div className={classes.MenuItems}>
           {/* <div className={classes.products}>Products</div> */}
           <ul>
@@ -565,7 +568,8 @@ const Sidebar = ({opens,setOpens}) => {
               route.childRoutes?.length ? (
                 <div key={route.id}>
                   <li
-                    className={activeRoute === route.id ? classes.Active : ""}
+                    // className={activeRoute === route.id ? classes.Active : ""}
+                    className={activeRoute === route.id ? `${classes.Active} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`:""}
                     onClick={() =>
                       setExpandedRoute((prev) =>
                         prev === route.name ? null : route.name
@@ -691,7 +695,7 @@ const Sidebar = ({opens,setOpens}) => {
             )}
           </ul>
         </div>
-        <div id="mySidebar" className={classes.SidebarService}>
+        <div id="mySidebar" className={`${classes.SidebarService} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
           <div className={classes.MenuItems}>
             {processedRoutesServices.length === 0 ? null : (
               <div className={classes.products}>Services</div>

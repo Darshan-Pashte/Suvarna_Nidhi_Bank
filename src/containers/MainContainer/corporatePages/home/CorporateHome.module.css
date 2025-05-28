@@ -184,6 +184,7 @@
     background: #FFF;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
 }
+
 .gridtitlemain {
     color:  var(--text-primary, rgba(0, 0, 0, 0.87));;
     leading-trim: both;
@@ -197,6 +198,10 @@
 
     /* margin: 30px 0px 20px 0px; */
     /* padding: 10px 0px 10px 15px; */
+}
+
+.gridtitlemain.DarkTheme {
+    color: var(--theme-text-color);
 }
 
 /* .gridtitle {
@@ -222,6 +227,10 @@
     font-weight: 500;
     line-height: normal;
     padding: 5px 0px 0px 10px;
+}
+
+.gridtitle.DarkTheme {
+    color: var(--theme-text-color);
 }
 
 .gridtitlefirst{
@@ -420,6 +429,19 @@ gap: 20px;
         width: 100%;
         /* min-height: 70%; */
     }
+      .cardsBoxCard.DarkTheme{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px !important;
+        border-radius: 2.25rem;
+        background: var( --theme-background-content-color) !important;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+        padding: 15px !important;
+        height: 84%;
+        width: 100%;
+        /* min-height: 70%; */
+    }
     .cardsheader {
         color: #183883;
         leading-trim: both;
@@ -446,6 +468,7 @@ gap: 20px;
         justify-content: space-between;
         align-items: center;
     }
+
     .gridtitle {
         color: #000;
         leading-trim: both;
@@ -459,6 +482,11 @@ gap: 20px;
         /* padding: 10px 0px 0px 10px; */
     }
 
+    .gridtitle.DarkTheme {
+        color: var(--theme-text-color);
+    }
+
+
     .gridtitle12 {
         color: #000;
         leading-trim: both;
@@ -470,6 +498,10 @@ gap: 20px;
         line-height: normal;
         padding: 5px 0px 0px 10px;
         margin-top: 10px;
+    }
+
+    .gridtitle12.DarkTheme {
+        color: var(--theme-text-color);
     }
 
     .grid1container {
@@ -582,6 +614,20 @@ gap: 20px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
     padding: 15px;
     height: 81%;
+    width: 100%;
+    /* min-height: 70%; */
+}
+
+.cardsBoxCard.DarkTheme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px !important;
+    border-radius: 2.25rem;
+    background: var(--theme-background-color) !important;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px !important;
+    height: 84%;
     width: 100%;
     /* min-height: 70%; */
 }

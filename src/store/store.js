@@ -8,13 +8,16 @@ import storageSession from 'redux-persist/lib/storage/session';
 // import userDetailReducer from "./userDetailSlice";
 // import userSessionDetailSlice from "./userSessionDetailSlice";
 import authReducer from './authSlice';
+import themeReducer from "./themeSlice";
+
 // import  entityDetailsReducer  from './entitySlice';
 
 const rootReducer = combineReducers({
     // advanceFilter: advanceFilterReducer,
     // userDetail: userDetailReducer,
     // userSessionDetail: userSessionDetailSlice,
-    auth:authReducer
+    auth:authReducer,
+    theme: themeReducer, 
     // entityDetails:entityReducer,
     // fixture:fixtureLandingSlice
 })

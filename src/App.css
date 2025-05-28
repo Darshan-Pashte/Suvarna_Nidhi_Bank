@@ -354,9 +354,13 @@ input[type="number"] {
 }
 /* NEW PAGINATION */
 
-.css-1wc848c-MuiFormHelperText-root.Mui-error {
+/* .css-1wc848c-MuiFormHelperText-root.Mui-error {
   width: 268px !important;
   color: var(--primary-color) !important;
+} */
+
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+  color: var(--button-color) !important;
 }
 
 

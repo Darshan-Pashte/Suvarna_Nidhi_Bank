@@ -263,7 +263,7 @@ const TransactionReceipt = () => {
             <div
                 className={`${Classes.transactionheading} ${location?.state?.rowData?.responseCode === "00" || location?.state?.rowData?.responseCode === "0" ? Classes.success : Classes.failed}`}
             >
-                {location?.state?.rowData?.responseCode === "00" || location?.state?.rowData?.responseCode === "0"
+                {location?.state?.rowData?.responseCode === "00" || location?.state?.rowData?.responseCode === "0" || location?.state?.rowData?.responseCode === "300"
                     ? "Transaction Successful"
                     : "Transaction Failed"
                 }
@@ -303,7 +303,7 @@ const TransactionReceipt = () => {
                 </div>
                 <div className={Classes.rightDetails}>
                     <div className={Classes.detailsHeading}>Beneficiary Name</div>
-                    <div className={Classes.detailsoutput}>{location?.state?.rowData?.beneName || "NA"}</div>
+                    <div className={Classes.detailsoutput}>{location?.state?.rowData?.benName || "NA"}</div>
                 </div>
             </div>
 

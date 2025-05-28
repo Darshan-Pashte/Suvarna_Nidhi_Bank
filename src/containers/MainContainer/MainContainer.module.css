@@ -21,8 +21,13 @@
   /* background-color: #f5f6fA !important; */
   background-color: #EDEDED;
   overflow-x: hidden;
+  transition: 1s ease;
   /* background-color: var( --body-background-color) !important; */
 
+}
+
+.Dashboard.DarkTheme{
+  background-color: var(--theme-background-content-color);
 }
 
 .loader {

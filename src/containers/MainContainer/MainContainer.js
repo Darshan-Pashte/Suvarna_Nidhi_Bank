@@ -16,8 +16,11 @@ import OpenDeposit from './SuperApp/Account/FixedDeposit/Opendeposit';
 import OpendepositeChild from './SuperApp/Account/FixedDeposit/OpendepositeChild';
 import OpendepositeChild1 from './SuperApp/Account/FixedDeposit/OpenDepositChild1';
 import LoansFields from './SuperApp/Loans/LoansFields';
+import { useSelector } from 'react-redux';
 
 const MainContainer = ({ title, opens }) => {
+  const theme = useSelector((state) => state.theme.theme);
+
   const { PROTECTED_ROUTES, PROTECTED_ROUTES_SERVICES, PROTECTED_ROUTES_SETTINGS } = routes();
   let processedRoutes = PROTECTED_ROUTES.flatMap((route) => {
     return [
@@ -72,7 +75,7 @@ const MainContainer = ({ title, opens }) => {
     //   .flat();
 
   return (
-    <div className={classes.Dashboard} style={{display: opens ? "none" : "block"}}>
+    <div style={{display: opens ? "none" : "block"}} className={`${classes.Dashboard} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
       <Routes>{processedRoutes}</Routes>
       <Routes>{processedRoutesServices}</Routes>
       <Routes>{processedRoutesSettings}</Routes>
