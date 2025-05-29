@@ -41,7 +41,7 @@ const defaultFormData = {
   transferType: "internal",
   accountNumber: "",
   beneAccNo: "",
-  transferMethod: "NEFT",
+  transferMethod: "IMPS",
   amount: "",
   ifsc: "",
   remark: "",
@@ -969,10 +969,10 @@ const TransferFunds = ({ accList }) => {
                         name: "transferMethod",
                       }}
                       data={[
-                        // {
-                        //   label: "IMPS",
-                        //   value: "IMPS",
-                        // },
+                        {
+                          label: "IMPS",
+                          value: "IMPS",
+                        },
                         {
                           label: "NEFT",
                           value: "NEFT",
