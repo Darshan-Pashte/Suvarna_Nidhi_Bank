@@ -22,6 +22,10 @@
     align-items: center;
     height:6vh;
 }
+
+.redrow.DarkTheme{
+    background: var(--theme-background-color);
+}
 .mainBox {
     /* margin: 1rem !important; */
 }
@@ -313,6 +317,10 @@
     height:9vh;
    
     /* align-items: flex-start; */
+}
+
+.redrow.DarkTheme{
+    background: var(--theme-background-color);
 }
 .cardsBox {
     margin-top: 0px;

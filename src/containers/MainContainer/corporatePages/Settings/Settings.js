@@ -136,6 +136,8 @@ function createData(
 
 const SettingsCorporate = () => {
   const [valueTable, setValueTable] = React.useState(0);
+  const theme = useSelector((state) => state.theme.theme);
+
 
   const handleChange = (event, newValue) => {
     setValueTable(newValue);
@@ -322,7 +324,7 @@ const SettingsCorporate = () => {
     <>
 
       {isLoading ? (<Loader loading={true} />) : (<Loader loading={false} />)}
-      <div className={classes.redrow}>
+      <div className={`${classes.redrow} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
         <div>
           <div style={{ display: "flex", gap: '5px' }}>
             {/* <GoBackButton /> */}

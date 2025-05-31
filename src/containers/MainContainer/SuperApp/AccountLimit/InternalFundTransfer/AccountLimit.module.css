@@ -79,18 +79,8 @@
     align-items: center;
     height: 6vh;
 }
-.redrows {
-    /* background: rgb(83 177 233 / 93%); */
-    background: var(--primary-color);
-    margin: 0%;
-    border-radius: 8px 8px 0px 0px;
-    padding: 0.4rem;
-    color: var();
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 6vh;
+.redrow.DarkTheme{
+    background: var(--theme-background-color);
 }
 .SubHeading {
     color: var(--color-N10, #ffffff);
@@ -447,19 +437,8 @@ box-shadow: 0px 4px 6px 0px rgba(66, 66, 66, 0.15) !important   ; */
         align-items: flex-start;
         height: 7vh;
     }
-    .redrows {
-        /* background: rgb(83 177 233 / 93%); */
-        background: var(--primary-color);
-        margin: 0%;
-        border-radius: 0px 0px 0px 0px;
-        padding: 0.8rem;
-        color: var();
-        font-weight: 600;
-        display: flex;
-        flex-direction: column !important;
-        justify-content: space-between;
-        align-items: flex-start;
-        height: 7vh;
+    .redrow.DarkTheme{
+        background: var(--theme-background-color);
     }
 
 

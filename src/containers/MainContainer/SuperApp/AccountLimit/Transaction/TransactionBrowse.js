@@ -92,6 +92,8 @@ const TransactionBrowse = () => {
 const [receiptData, setReceiptData] = useState([]);
     const [logoBase64, setLogoBase64] = useState(null);
      const [selectedAccountName, setSelectedAccountName] = useState("");
+     const theme = useSelector((state) => state.theme.theme);
+
     useEffect(() => {
         // Convert logo SVG to base64 using a simple method
         const logo = new Image();
@@ -623,7 +625,7 @@ console.log("User = ",user)
                 onSubmit={handleSubmit(onSubmit)}
             >
                 <div className={classes.Sbox}>
-                    <div className={classes.bluerow}>
+                    <div className={`${classes.bluerow} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
                         <div className={classes.bluerowtext}>Transfer History</div>
                         <div style={{ display: "flex", gap: "10px" }}></div>
                     </div>

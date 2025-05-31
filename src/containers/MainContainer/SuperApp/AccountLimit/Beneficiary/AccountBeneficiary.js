@@ -70,6 +70,8 @@ const AccountBeneficiary = () => {
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const [deletedRowData, setDeletedRowData] = useState(null);
   const handleCloseDelete = () => setOpenDeleteModal(false);
+  const theme = useSelector((state) => state.theme.theme);
+
 
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -370,7 +372,7 @@ const AccountBeneficiary = () => {
     <>
       {isLoading ? (<Loader loading={true} />) : (<Loader loading={false} />)}
 
-      <div className={classes.redrow}>
+      <div className={`${classes.redrow} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
         <div style={{display:"flex",alignItems:"center", gap:'5px'}}>
           <GoBackButton/>
              <div className={classes.SubHeading}>

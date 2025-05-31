@@ -390,6 +390,9 @@ margin: 20px 0;
     align-items: center;
     height:6vh;
 }
+.redrow.DarkTheme{
+    background: var(--theme-background-color);
+}
 .SubHeading{
     color: var(--color-N10, #ffffff);
     leading-trim: both;
@@ -425,6 +428,9 @@ margin: 20px 0;
         justify-content: space-between;
         align-items: center;
         height:8vh;
+    }
+    .redrow.DarkTheme{
+        background: var(--theme-background-color);
     }
     .SubHeading{
         color: var(--color-N10, #ffffff);

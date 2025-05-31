@@ -61,6 +61,8 @@ const BrowseCustomerComplaint = () => {
         (state) => state.auth
     );
 
+    const theme = useSelector((state) => state.theme.theme);
+
     const handleNavigate = () => {
         navigate("/complaint/raisecomplaint")
     }
@@ -360,7 +362,7 @@ const BrowseCustomerComplaint = () => {
     return (
         <>
             {isLoading ? <Loader loading={true} /> : <Loader loading={false} />}
-            <div className={classes.redrow}>
+            <div className={`${classes.redrow} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
                 <div>
                     <div style={{ display: "flex", alignItems: "center", gap: '5px' }}>
                         <GoBackButton />

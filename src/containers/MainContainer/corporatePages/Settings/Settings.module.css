@@ -228,6 +228,9 @@ line-break: anywhere;
     align-items: center;
     height:6vh;
 }
+.redrow.DarkTheme{
+    background: var(--theme-background-color);
+}
 .SubHeading{
     color: var(--color-N10, #ffffff);
     leading-trim: both;
@@ -264,6 +267,9 @@ line-break: anywhere;
         justify-content: space-between;
         align-items: flex-start;
         height: 6vh;
+    }
+    .redrow.DarkTheme{
+        background: var(--theme-background-color);
     }
 
     .SubHeading {

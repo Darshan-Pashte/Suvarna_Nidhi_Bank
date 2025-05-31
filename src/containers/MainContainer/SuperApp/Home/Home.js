@@ -95,6 +95,8 @@ const Home = () => {
   const [miniStatement, setMiniStatement] = useState([]);
   const [isLoading, setIsloading] = useState(false);
   const [shouldRunApi, setshouldRunApi] = useState(false)
+  const theme = useSelector((state) => state.theme.theme);
+
 
   console.log("userfff", user);
 
@@ -139,8 +141,8 @@ const Home = () => {
             style={{ padding: "0.1vw" }}
           >
             <Grid item xs={12} sm={12} md={6}>
-              <div className={classes.gridtitle}>Account Details</div>
-              <div className={classes.cardsBoxCard}>
+              <div className={`${classes.gridtitle} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>Account Details</div>
+              <div className={`${classes.cardsBoxCard} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
                 {isLoading ? (
                   <Loader loading={true} />
                 ) : (
@@ -153,7 +155,7 @@ const Home = () => {
             </Grid>
 
             <Grid item xs={12} sm={12} md={6}>
-              <div className={classes.gridtitle}>Account Statement</div>
+              <div className={`${classes.gridtitle} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>Account Statement</div>
               <div className={classes.cardsBox}>
                 <div className={classes.accountstatement}>
                   <AccountStatementHome accList={accList} />
@@ -162,13 +164,13 @@ const Home = () => {
             </Grid>
 
             <Grid item xs={12} sm={12} md={12}>
-              <div className={classes.gridtitle}>Summary</div>
+              <div className={`${classes.gridtitle} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>Summary</div>
               <Box className={classes.tableMainBox}>
                 <Box
                   sx={{
                     borderBottom: 1,
                     borderColor: "divider",
-                    backgroundColor: "var(--primary-color)",
+                    backgroundColor: theme === "dark" ?"var(--theme-background-color)" : "var(--primary-color)",
                     borderRadius: 2,
                   }}
                 >
@@ -183,6 +185,7 @@ const Home = () => {
                   >
                     <Tab
                       style={{ color: "var(--common-heading-color)" }}
+                      
                       label="Mini Statement"
                       {...a11yProps(0)}
                     />

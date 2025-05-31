@@ -52,6 +52,7 @@ import UpdatePassword from "../../../Login/updatePasswordModal";
 import ForgetTPINModal from "./ForgetTPINModel";
 import GoBackButton from "../../../../components/common/GoBackButton";
 import Loader from "../../../../components/common/loader";
+import UpdateMobileModal from "./UpdateMobileModal";
 
 const labelcheck = { inputProps: { "aria-label": "Checkbox demo" } };
 const labelswitch = { inputProps: { "aria-label": "Switch demo" } };
@@ -139,6 +140,8 @@ function createData(
 
 const Settings = () => {
   const [valueTable, setValueTable] = React.useState(0);
+  const theme = useSelector((state) => state.theme.theme);
+
 
   const handleChange = (event, newValue) => {
     setValueTable(newValue);
@@ -177,6 +180,7 @@ const Settings = () => {
 
 
   const [isModalOpenTPIN, setIsModalOpenTPIN] = useState(false);
+  const [isModalOpenMobile, setIsModalOpenMobile] = useState(false);
   const [isModalOpenForgetTPIN, setIsModalOpenForgetTPIN] = useState(false);
   const [response, setResponse] = useState("");
 
@@ -194,6 +198,14 @@ const Settings = () => {
 
   const closeModalTPIN = () => {
     setIsModalOpenTPIN(false);
+  };
+
+  const openModalMobile = () => {
+    setIsModalOpenMobile(true);
+  };
+
+  const closeModalMobile = () => {
+    setIsModalOpenMobile(false);
   };
 
 
@@ -343,8 +355,8 @@ const Settings = () => {
     background: "var(--primary-color)",
     border: "1px solid #CCC",
     borderRadius: "8px",
-    paddingLeft: "15px",
-    paddingRight: "15px",
+    paddingLeft: "7px",
+    paddingRight: "7px",
     width: "177px",
     height: "40px",
     "&:hover": {
@@ -365,7 +377,7 @@ const Settings = () => {
   return (
     <>
        {isLoading ? (<Loader loading={true} />) : (<Loader loading={false} />)}
-      <div className={classes.redrow}>
+      <div className={`${classes.redrow} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
         <div>
           <div style={{ display: "flex", gap: '5px' }}>
             <GoBackButton />
@@ -381,6 +393,9 @@ const Settings = () => {
         <div className={classes.cardsmainpage}>
           <div className={classes.uupercontet}>
             <div className={classes.changebuttons}>
+              <ColorButton1 variant="contained" type="submit" onClick={openModalMobile}>
+                Update Mobile
+              </ColorButton1>
               <ColorButton1 variant="contained" type="submit" onClick={openModalTPIN}>
                 Update TPIN
               </ColorButton1>
@@ -400,6 +415,9 @@ const Settings = () => {
               rowSpacing={2}
               style={{ padding: "0.1vw" }}
             >
+               <Grid item xs={12} sm={12} md={12}>
+                
+               </Grid>
 
 
               <Grid item xs={12} sm={12} md={12}>
@@ -550,6 +568,14 @@ const Settings = () => {
                       <UpdatePassword
                         open={isModalOpen}
                         handleClose={closeModal}
+                        userId={userId}
+                      />
+                    ) : null}
+
+                    {isModalOpenMobile ? (
+                      <UpdateMobileModal
+                        openTPIN={isModalOpenMobile}
+                        handleCloseTPIN={closeModalMobile}
                         userId={userId}
                       />
                     ) : null}

@@ -104,6 +104,8 @@ const SelfAccountTransfer = () => {
     mode: "onChange",
   });
   const navigate = useNavigate();
+  const theme = useSelector((state) => state.theme.theme);
+
 
   const handlleNavigate = (route, state) => {
     navigate(route, { state: state }); // Directly pass state containing `data` and `response`
@@ -339,7 +341,7 @@ const SelfAccountTransfer = () => {
   return (
     <>
       {isLoading ? <Loader loading={true} /> : <Loader loading={false} />}
-      <div className={classes.redrow}>
+      <div className={`${classes.redrow} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
         <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
           <GoBackButton />
           <div className={classes.SubHeading}>

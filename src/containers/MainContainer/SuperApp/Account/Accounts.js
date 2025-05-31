@@ -129,6 +129,7 @@ export default function Accounts() {
   const [additionalData, setAdditionalData] = useState(null);
   const [loadings, setLoadings] = useState(false); // For storing additional data
 
+  const theme = useSelector((state) => state.theme.theme);
 
   const handleOpen = async (row) => {
     setLoadings(true);
@@ -269,7 +270,7 @@ export default function Accounts() {
   return (
     <>
       {isLoading ? <Loader loading={true} /> : <Loader loading={false} />}
-      <div className={classes.redrow}>
+      <div  className={`${classes.redrow} ${theme === "dark" ? `${classes.DarkTheme}` : `${classes.LightTheme}`}`}>
         <div className={classes.subredrowHeading}>
           <GoBackButton />
           <div className={classes.SubHeading}>
@@ -369,7 +370,7 @@ export default function Accounts() {
                   <TableRow
                     style={{
                       textAlign: "center",
-                      backgroundColor: "var(--primary-color)",
+                      backgroundColor: theme === "dark" ? "var(--theme-background-color)" : "var(--primary-color)",
                       color: "#FFFFFF",
                     }}
                   >
@@ -595,7 +596,7 @@ export default function Accounts() {
               sx={{
                 borderBottom: 1,
                 borderColor: "divider",
-                backgroundColor: "var(--primary-color)",
+                backgroundColor: theme === "dark" ? "var(--theme-background-color)" : "var(--primary-color)",
                 borderRadius: 2,
               }}
             >

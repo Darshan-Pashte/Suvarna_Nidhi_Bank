@@ -26,6 +26,7 @@ export const apiList = {
   SETFORGOTPASS: baseUrlServer + "register/setForgotPass",
 
   UPDATETPIN: baseUrlServer + "register/changeTpin",
+  UPDATEMOBILE: baseUrlServer + "updatepMobileNo",
 
   TPINPASS: baseUrlServer + "register/setpin",
   ACCOUNTLIST: baseUrlServer + "bankaccounts",

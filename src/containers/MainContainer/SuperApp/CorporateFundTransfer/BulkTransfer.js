@@ -156,7 +156,7 @@ const BulkTransfer = ({ accList }) => {
   const defaultFormData = {
     tranferType: "Internal",
     accountNumber: "",
-    tranferMethod: "NEFT",
+    tranferMethod: "IMPS",
     remark: "",
     bulkpayment: "",
   };
@@ -1014,10 +1014,10 @@ console.log("dataList",responseData)
                         name: "tranferMethod",
                       }}
                       data={[
-                        // {
-                        //   label: "IMPS",
-                        //   value: "IMPS",
-                        // },
+                        {
+                          label: "IMPS",
+                          value: "IMPS",
+                        },
                         {
                           label: "NEFT",
                           value: "NEFT",
